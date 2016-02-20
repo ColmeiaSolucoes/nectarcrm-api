@@ -9,7 +9,7 @@ Esta API permite o controle total dos contatos (Leads, Suspects, Prospects, Clie
 
 ## Instruções para realizar a integração
 
-### URL para envio dos dados
+### URL de acesso
 http://app.nectarcrm.com.br/crm/api/1/
 
 ### Requisição HTTP
@@ -18,8 +18,8 @@ Seguimos a estrutura padrão do estilo [RESTful](https://en.wikipedia.org/wiki/R
 
 - GET: lista ou consulta dados
 - POST: criação de dados
-- PUT: atualização dos dados
-- DELETE: remoção
+- PUT: atualização de dados
+- DELETE: remoção de dados
 
 ### Seções disponíveis
 
