@@ -40,19 +40,27 @@ Exemplo
         "nome": "Minha primeira oportunidade do contato 1",
         "observacao": "Uma Observação qualquer",
         "cliente": {
-          "id": 141960
+          "id": 141960,
+          "nome": "Cliente 1"
         },
         "dataLimite": 1455760800000,
-        "produtos": [{ "nome": "Primeiro item", "valor": 10000 }],
+        "produtos": [
+            {
+                "nome": "Primeiro item",
+                "valor": 10000.50 //R$ 10.000,50
+            }
+        ],
         "pipeline": "Pipeline padrão",
         "probabilidade": 50,
-        "etapa": 2,
+        "etapa": 2, //Etapa 2
         "responsavel": {
-          "id": 19
+          "id": 12,
+          "login": "contato1@teste.com.br",  //se nao tiver id, procura por esse
+          "nome": "Usuario 1"  //se nao tiver id, procura por esse
         },
-        "status": 1,
-        "valorAvulso": 500000,
-        "valorMensal": 1000,
+        "status": 1, //Em andamento
+        "valorAvulso": 500000, //R$ 500.000
+        "valorMensal": 1000, //R$ 1.000
         "camposPersonalizados": {
             "Campo 1": "Valor 1",
             "Campo 2": "Valor 2"

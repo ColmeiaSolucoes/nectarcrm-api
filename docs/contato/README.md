@@ -41,3 +41,57 @@ site | (string) | Website do contato
 skype | (string) | Skype do contato
 telefones | (array)["string"] | Telefones do contato
 twitter | (string) | Twitter do contato
+
+
+Exemplo
+```js
+    {
+        "ativo": true,
+        "autor": {
+          "id": 12,
+          "login": "contato1@teste.com.br",
+          "nome": "Usuario 1"
+        },
+        "camposPersonalizados": {
+            "campo1": "Teste",
+            "campo2": "Teste 2"
+        },
+        "categoria": "Cliente ativo",
+        "cnpj": "99.999.999/9999-99",
+        "constante": 2,
+        "contatos": [
+          {
+              "nome": "Contato-relacionado",
+              "cargo": "Diretor",
+              "emails": [
+                  "novo@trial.com.br"
+                ]
+          }
+        ],
+        "emails": [
+          "novo@trial.com.br"
+        ],
+        "facebook": "facebook1",
+        "indicadoPor": "Fulano",
+        "linkedin": "linkedin1",
+        "nome": "Contato 1",
+        "observacao": "Observação qualquer",
+        "origem": "Telefone",
+        "razaoSocial": "Contato 1 LTDA",
+        "receitaAnual": "R$ 10.000.000,00",
+        "responsavel": {
+          "id": 12,
+          "login": "contato1@teste.com.br", //se nao tiver id, procura por esse
+          "nome": "Usuario 1" //se nao tiver id, procura por esse
+        },
+        "segmento": "Advocacia ",
+        "sigiloso": false,
+        "site": "www.site.com.br",
+        "skype": "skype1",
+        "telefones": [
+          "99999999999",
+          "11999999999"
+        ],
+        "twitter": "twitter1"
+    }
+```
