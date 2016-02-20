@@ -6,7 +6,7 @@
   **Nota:** Qualquer erro ou sugestão, por favor nos contate.
 
 Esta API permite o controle total dos contatos, oportunidades, tarefas e comprimissos. Veja as instruções de como realizar a integração abaixo.
-##[Clique aqui para a documentação completa](http://docs.nectarcrm.apiary.io)
+###[Clique aqui para a documentação completa](http://docs.nectarcrm.apiary.io)
 
 ## Instruções para realizar a integração
 
@@ -21,6 +21,78 @@ Seguimos a estrutura padrão do estilo [RESTful](https://en.wikipedia.org/wiki/R
 - POST: criação de dados
 - PUT: atualização de dados
 - DELETE: remoção de dados
+
+### Retorno
+
+
++ Response (application/json)
+
+    ```js
+        {
+            "sobre": {
+                "versao": "1.0",
+                "creditos": "Colmeia Soluções"
+            },
+            "endpoints": {
+                "contatos": {
+                    "edicao": {
+                        "response": 200,
+                        "title": "Edicao de contatos",
+                        "method": "PUT",
+                        "endpoint": "http://app.nectarcrm.com.br/crm/api/1/contatos/:id"
+                    },
+                    "listagem": {
+                        "response": 200,
+                        "title": "Listagem de contatos",
+                        "method": "GET",
+                        "endpoint": "http://app.nectarcrm.com.br/crm/api/1/contatos"
+                    }
+                    //...outros métodos abaixo
+                }
+            }
+        }
+    ```
+
+## Como autenticar
+
+É necessário passar o token privado de autenticação para conseguir realizar as operações.
+Para conseguir esse token, acesse no NectarCRM a seção **Configurações** -> *Integrações*.
+
+![Token Nectar ](http://nectarcrm.com.br/assets/images/screens/screen-token.png?ok)
+
+Com esse token, você acessa, edita e excluir as informações possíveis pela API.
+
+Você pode optar por 2 caminhos:
+
+1. Enviar header na requisição **Access-Token** *SEU_TOKEN*
+```
+curl http://app.nectarcrm.com.br/crm/api/1/contatos/ -H "Access-Token: c5520d027fd1475b97a7a3aab50886f4"
+```
+
+2. Enviar parâmetro na URL de requisição **api_token=** *SEU_TOKEN*
+```
+curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b97a7a3aab50886f4
+```
+
+
+## Códigos de respostas
+
++ 200 (application/json)
+
+        Sucesso
+
++ 401 (text/json)
+
+        Algum parâmetro enviado errado
+
++ 404 (text/json)
+
+        Registro não encontrado
+
++ 500 (text/json)
+
+        Erro do servidor
+
 
 ### Seções disponíveis
 
