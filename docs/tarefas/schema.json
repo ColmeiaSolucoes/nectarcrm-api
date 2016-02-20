@@ -1,0 +1,90 @@
+/** 
+ * Schema do Objeto Tarefa
+ */
+{
+	"type": "object",
+	"properties": {
+		"autor": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"login": {
+					"type": "string"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"autorAtualizacao": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"login": {
+					"type": "string"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"cliente": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"dataAtualizacao": {
+			"type": "integer"
+		},
+		"dataCriacao": {
+			"type": "integer"
+		},
+		"dataLimite": {
+			"type": "integer"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"prioridade": {
+			"type": "integer"
+		},
+		"responsavel": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"login": {
+					"type": "string"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"status": {
+			"type": "integer"
+		},
+		"titulo": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"cliente",
+		"dataLimite",
+		"titulo"
+	]
+}

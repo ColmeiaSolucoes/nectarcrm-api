@@ -14,12 +14,12 @@ Schema Info | [Schema JSON](schema.json)
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 assunto | (string) | Assunto do compromisso
-autor | (object) | Autor do contato
+autor | (object) | Autor do compromisso
 autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
 dataAtualizacao | (datetime) | Última data de atualização
-dataCriacao | (datetime) | Data de criação desse contato
+dataCriacao | (datetime) | Data de criação desse compromisso
 dataInicio | (datetime) | Data do inicio do compromisso
 dataFim | (datetime) | Data do final do compromisso
 descricao | (string) | Descrição do compromisso
@@ -28,8 +28,8 @@ endereco | (string) | Endereço do compromisso
 id | (long) | Identificador no sistema
 local | (string) | Local do compromisso
 participantes | (array)(object) | Lista dos participantes do compromisso
-responsavel | (object) | Quem será responsável por esse contato
-status | (integer) | Status da compromisso (1 = Aberto, 2 = Finalizado, 3 = Cancelado)
+responsavel | (object) | Quem será responsável por esse compromisso
+status | (integer) | Status da compromisso (0 = Aberto, 1 = Realizado, 2 = Cancelado)
 tipo | (object){"id", "nome"} | Tipo do compromisso (cadastrado, se não existir iremos incluir)
 
 Exemplo
