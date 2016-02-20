@@ -15,41 +15,8 @@
 				}
 			}
 		},
-		"autorAtualizacao": {
-			"type": "object",
-			"properties": {
-				"id": {
-					"type": "integer"
-				},
-				"nome": {
-					"type": "string"
-				}
-			}
-		},
-		"camposPersonalizados": {
-			"type": "object",
-			"properties": {
-				"type": "string, string",
-				"description": "label, valor"
-			}
-		},
-		"cliente": {
-			"id": "cliente",
-			"type": "object",
-			"properties": {
-				"id": {
-					"type": "long"
-				}
-			}
-		},
 		"codigo": {
 			"type": "string"
-		},
-		"dataAtualizacao": {
-			"type": "timestamp"
-		},
-		"dataCriacao": {
-			"type": "timestamp"
 		},
 		"dataLimite": {
 			"type": "timestamp"
@@ -60,7 +27,8 @@
 		"id": {
 			"type": "integer"
 		},
-		"produtos": {
+		"itens": {
+			"id": "itens",
 			"type": "array",
 			"items": [{
 				"id": {
@@ -113,6 +81,15 @@
 		"camposPersonalizados": {
 			"type": "object",
 			"properties": {}
+		},
+		"cliente": {
+			"id": "cliente",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				}
+			}
 		}
 	},
 	"required": [

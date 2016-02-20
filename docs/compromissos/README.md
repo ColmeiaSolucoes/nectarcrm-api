@@ -1,11 +1,11 @@
-# Contato Resource
+# Compromisso Resource
 
-Esta API permite o controle total dos contatos (Leads, Suspects, Prospects, Clientes, etc.). Veja as instruções de como realizar a integração abaixo.
+Esta API permite o controle total das compromisso. Veja as instruções de como realizar a integração abaixo.
 
 Instruções para realizar a integração:
 
 URL
-http://app.nectarcrm.com.br/crm/api/1/contatos/
+http://app.nectarcrm.com.br/crm/api/1/compromissos/
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
@@ -19,7 +19,7 @@ autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 categoria | (string) | Categoria do contato (se não tiver, será criado)
 cnpj | (string) | CNPJ do contato
-cpf | (string) | CPF do contato
+cnpj | (string) | CPF do contato
 constante | (integer) | 0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 4 = Contatos relacionados, 5 = Descartados
 contatos | (array)(contato) | Contatos relacionados (pessoas)
 dataAtualizacao | (datetime) | Última data de atualização

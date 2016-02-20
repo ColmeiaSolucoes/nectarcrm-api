@@ -64,7 +64,7 @@
 	  "type": "timestamp"
 	},
 	"dataCriacao": {
-	  "type": "auto"
+	  "type": "timestamp"
 	},
 	"emails": {
 	  "type": "array",

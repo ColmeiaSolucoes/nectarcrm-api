@@ -9,102 +9,27 @@ http://app.nectarcrm.com.br/crm/api/1/oportunidades/
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
-Schema
-```js
-{
-  "type": "object",
-  "properties": {
-    "autor": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "nome": {
-          "type": "string"
-        }
-      }
-    },
-    "codigo": {
-      "type": "string"
-    },
-    "dataLimite": {
-      "type": "timestamp"
-    },
-    "etapa": {
-      "type": "integer"
-    },
-    "id": {
-      "type": "integer"
-    },
-    "itens": {
-      "id": "itens",
-      "type": "array",
-      "items": [{
-        "id": {
-            "type": "integer"
-        },
-        "nome": {
-            "type": "string"
-        }
-        "valor": {
-            "type": "float"
-        }
-      }]
-    },
-    "nome": {
-      "type": "string"
-    },
-    "observacao": {
-      "type": "string"
-    },
-    "pipeline": {
-      "type": "string"
-    },
-    "probabilidade": {
-      "type": "integer"
-    },
-    "responsavel": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "id": "id",
-          "type": "integer"
-        },
-        "nome": {
-          "id": "nome",
-          "type": "string"
-        }
-      }
-    },
-    "status": {
-      "id": "status",
-      "type": "integer",
-      "description": "1 = EM ANDAMENTO, 2 = GANHO, 3 = PERDIDO, 4 = CANCELADO"
-    },
-    "valorAvulso": {
-      "type": "float"
-    },
-    "valorMensal": {
-      "type": "float"
-    },
-    "camposPersonalizados": {
-      "type": "object",
-      "properties": {}
-    },
-    "cliente": {
-      "id": "cliente",
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "long"
-        }
-      }
-    }
-  },
-  "required": [
-    "nome",
-    "cliente"
-  ]
-}
-``
+Schema Info | [Schema JSON](schema.json)
+
+Propriedade | Tipo | Descricao
+------------ | ------------- | -------------
+autor | (object) | Autor do contato
+autorAtualizacao | (object) | Quem fez a última atualização
+camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
+cliente | (object) | Contato relacionado a venda
+codigo | (string)(auto) | Código da oportunidade
+dataAtualizacao | (datetime) | Última data de atualização
+dataCriacao | (datetime) | Data de criação desse contato
+dataLimite | (datetime) | Data limite de fechamento da oportunidade
+etapa | (integer) | Etapa atual do fluxo de venda
+id | (long) | Identificador do contato no sistema
+isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
+produtos | (array)(object) | Itens e produtos
+nome | (string) | Nome do contato
+observacao | (string) | Observação do contato
+pipeline | (object) | Fluxo de venda / Pipeline
+probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
+responsavel | (string) | Quem será responsável por esse contato
+status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado
+valorAvulso | (float) | Valor da venda avulsa
+valorMensal | (float) | Valor da venda recorrente (mensal)
