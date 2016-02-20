@@ -26,7 +26,7 @@ Seguimos a estrutura padrão do estilo [RESTful](https://en.wikipedia.org/wiki/R
 Segue as seções que você pode acessar pela API
 
 - [/contatos](./docs/contato)
-- /oportunidades
+- [/oportunidades](./docs/oportunidade)
 - /compromissos
 - /tarefas
 
