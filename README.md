@@ -27,8 +27,8 @@ Segue as seções que você pode acessar pela API
 
 - [/contatos](./docs/contato)
 - [/oportunidades](./docs/oportunidade)
-- /compromissos
-- /tarefas
+- [/compromissos](./docs/compromisso)
+- [/tarefas](./docs/tarefa)
 
 ### Header
 A requisição deve conter:
