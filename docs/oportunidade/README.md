@@ -33,3 +33,29 @@ responsavel | (string) | Quem será responsável por esse contato
 status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
+
+Exemplo
+```js
+    {
+        "nome": "Minha primeira oportunidade do contato 1",
+        "observacao": "Uma Observação qualquer",
+        "cliente": {
+          "id": 141960
+        },
+        "dataLimite": 1455760800000,
+        "produtos": [{ "nome": "Primeiro item", "valor": 10000 }],
+        "pipeline": "Pipeline padrão",
+        "probabilidade": 50,
+        "etapa": 2,
+        "responsavel": {
+          "id": 19
+        },
+        "status": 1,
+        "valorAvulso": 500000,
+        "valorMensal": 1000,
+        "camposPersonalizados": {
+            "Campo 1": "Valor 1",
+            "Campo 2": "Valor 2"
+        }
+    }
+```
