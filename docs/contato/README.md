@@ -6,7 +6,7 @@ Esta API permite o controle total dos contatos (Leads, Suspects, Prospects, Clie
 Instruções para realizar a integração:
 
 URL para envio dos dados
-http://app.nectarcrm.com.br/crm/api/1/
+http://app.nectarcrm.com.br/crm/api/1/contatos/
 
 Método
 Requisição HTTP:
@@ -22,7 +22,7 @@ A requisição deve conter:
 - Content-Type: application/json
 - Access-Token: SEU_TOKEN_AQUI
 
-[Para mais informações, consulte a documentação clicando aqui](http://docs.nectarcrm.apiary.io)
+[Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
 Schema
 ```js

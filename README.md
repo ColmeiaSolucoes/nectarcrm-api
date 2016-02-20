@@ -4,3 +4,31 @@
   Colocaremos materiais e webhooks para que a integração seja facilitada.
 
   **Nota:** Qualquer erro ou sugestão, por favor nos contate.
+
+Esta API permite o controle total dos contatos (Leads, Suspects, Prospects, Clientes, etc.). Veja as instruções de como realizar a integração abaixo.
+
+## Instruções para realizar a integração
+
+### URL para envio dos dados
+http://app.nectarcrm.com.br/crm/api/1/
+
+### Requisição HTTP:
+
+    - GET: lista ou consulta dados
+    - POST: criação de dados
+    - PUT: atualização dos dados
+    - DELETE: remoção
+
+### Seções disponíveis
+    - [/contatos](./docs/contato)
+    - /oportunidades
+    - /compromissos
+    - /tarefas
+
+### Header
+A requisição deve conter:
+
+- Content-Type: application/json
+- Access-Token: SEU_TOKEN_AQUI
+
+[Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
