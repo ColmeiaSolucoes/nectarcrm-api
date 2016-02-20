@@ -12,7 +12,7 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
 Schema
 
 Propriedade | Tipo | Descricao
------------- | -------------
+------------ | ------------- | -------------
 ativo | (boolean) | Se está ou não ativo no sistema
 autor | (object) | Autor do contato
 autorAtualizacao | (object) | Quem fez a última atualização
