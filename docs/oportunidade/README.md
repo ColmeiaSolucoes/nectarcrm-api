@@ -22,15 +22,15 @@ dataAtualizacao | (datetime) | Última data de atualização
 dataCriacao | (datetime) | Data de criação desse contato
 dataLimite | (datetime) | Data limite de fechamento da oportunidade
 etapa | (integer) | Etapa atual do fluxo de venda
-id | (long) | Identificador do contato no sistema
+id | (long) | Identificador no sistema
 isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
 produtos | (array)(object) | Itens e produtos
 nome | (string) | Nome do contato
 observacao | (string) | Observação do contato
 pipeline | (object) | Fluxo de venda / Pipeline
 probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
-responsavel | (string) | Quem será responsável por esse contato
-status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado
+responsavel | (object) | Quem será responsável por esse contato
+status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado)
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
 

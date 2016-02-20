@@ -1,99 +1,131 @@
 /** 
- * Schema do Objeto Oportunidade
+ * Schema do Objeto Compromisso
  */
 {
 	"type": "object",
 	"properties": {
+		"assunto": {
+			"type": "string"
+		},
 		"autor": {
 			"type": "object",
 			"properties": {
 				"id": {
 					"type": "integer"
 				},
+				"login": {
+					"type": "string"
+				},
 				"nome": {
 					"type": "string"
 				}
 			}
 		},
-		"codigo": {
-			"type": "string"
+		"autorAtualizacao": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"login": {
+					"type": "string"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
 		},
-		"dataLimite": {
-			"type": "timestamp"
+		"camposPersonalizados": {
+			"type": "object",
+			"properties": {
+				"label": {
+					"type": "string"
+				}
+			}
 		},
-		"etapa": {
-			"type": "integer"
-		},
-		"id": {
-			"type": "integer"
-		},
-		"itens": {
-			"id": "itens",
-			"type": "array",
-			"items": [{
+		"cliente": {
+			"type": "object",
+			"properties": {
 				"id": {
 					"type": "integer"
 				},
 				"nome": {
 					"type": "string"
 				}
-				"valor": {
-					"type": "float"
-				}
-			}]
+			}
 		},
-		"nome": {
-			"type": "string"
-		},
-		"observacao": {
-			"type": "string"
-		},
-		"pipeline": {
-			"type": "string"
-		},
-		"probabilidade": {
+		"dataAtualizacao": {
 			"type": "integer"
+		},
+		"dataCriacao": {
+			"type": "integer"
+		},
+		"dataFim": {
+			"type": "integer"
+		},
+		"dataInicio": {
+			"type": "integer"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"diaInteiro": {
+			"type": "boolean"
+		},
+		"endereco": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"local": {
+			"type": "string"
+		},
+		"participantes": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "integer"
+					},
+					"login": {
+						"type": "string"
+					},
+					"nome": {
+						"type": "string"
+					},
+					"participar": {
+						"type": "boolean"
+					}
+				}
+			}
 		},
 		"responsavel": {
 			"type": "object",
 			"properties": {
 				"id": {
-					"id": "id",
 					"type": "integer"
 				},
+				"login": {
+					"type": "string"
+				},
 				"nome": {
-					"id": "nome",
 					"type": "string"
 				}
 			}
 		},
 		"status": {
-			"id": "status",
-			"type": "integer",
-			"description": "1 = EM ANDAMENTO, 2 = GANHO, 3 = PERDIDO, 4 = CANCELADO"
+			"type": "integer"
 		},
-		"valorAvulso": {
-			"type": "float"
-		},
-		"valorMensal": {
-			"type": "float"
-		},
-		"camposPersonalizados": {
-			"type": "object",
-			"properties": {}
-		},
-		"cliente": {
-			"id": "cliente",
-			"type": "object",
-			"properties": {
-				"id": {
-					"type": "long"
-				}
-			}
+		"tipo": {
+			"type": "string"
 		}
 	},
 	"required": [
-		"nome",
-		"cliente"
+		"assunto",
+		"cliente",
+		"dataFim",
+		"dataInicio"
 	]
 }
