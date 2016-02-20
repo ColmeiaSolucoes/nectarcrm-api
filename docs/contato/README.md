@@ -10,6 +10,11 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
 Schema
+ |
+------------ | -------------
+ativo | Se está ou não ativo no sistema
+autor | Autor do contato
+
 ```js
 {
   "type": "object",
