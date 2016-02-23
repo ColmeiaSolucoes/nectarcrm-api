@@ -66,11 +66,41 @@
 				"id": {
 					"type": "integer"
 				},
+				"comissaoPorcentual": {
+					"type": "boolean",
+					"default": false
+				},
+				"desconto": {
+					"type": "float",
+					"default": 0
+				},
+				"descontoPorcentual": {
+					"type": "boolean",
+					"default": false
+				},
+				"refId": {
+					"type": "integer",
+					"description": "ID de referência do produto cadastrado"
+				},
 				"nome": {
-					"type": "string"
-				}
-				"valor": {
-					"type": "float"
+					"type": "string",
+					"description": "Nome do produto"
+				},
+				"quantidade": {
+					"type": "integer",
+					"description": "Quantidade de produto"
+				},
+				"recorrencia": {
+					"type": "integer",
+					"description": "0 = Avulso, 1 = Mensal, 2 = Anual (mensal x 12)"
+				},
+				"valorUnitario": {
+					"type": "float",
+					"description": "Valor unitario do produto"
+				},
+				"valorTotal": {
+					"type": "float",
+					"description": "(Automatico) Valor unitario * quantidade - descontos"
 				}
 			}]
 		},

@@ -46,8 +46,15 @@ Exemplo
         "dataLimite": 1455760800000,
         "produtos": [
             {
-                "nome": "Primeiro item",
-                "valor": 10000.50 //R$ 10.000,50
+                "comissaoPorcentual": false,
+                "desconto": 0,
+                "descontoPorcentual": false,
+                "refId": 8435, //ID do produto cadastrado
+                "nome": "Produto 1",
+                "quantidade": 6, //quantidade de produtos
+                "recorrencia": 1, //0 = Avulso, 1 = Mensal, 2 = Anual (mensal x 12)
+                "valor": 69,
+                "valorTotal": 414
             }
         ],
         "pipeline": "Pipeline padrão",
