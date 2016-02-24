@@ -33,6 +33,9 @@ responsavel | (object) | Quem será responsável por essa oportunidade
 status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado)
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
+valorTotal | (float) | Valor total da venda (todos produtos e descontos)
+valorTotalDescontos | (float) | Valor total dos descontos
+valorTotalProdutos | (float) | Valor total dos produtos
 
 Exemplo
 ```js

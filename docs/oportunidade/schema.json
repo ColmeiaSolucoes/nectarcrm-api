@@ -140,6 +140,18 @@
 		"valorMensal": {
 			"type": "float"
 		},
+		"valorTotal": {
+			"type": "float",
+			"description": "Valor total da oportunidade (contando itens e descontos)"
+		},
+		"valorTotalDescontos": {
+			"type": "float",
+			"description": "Valor total dos descontos)"
+		},
+		"valorTotalProdutos": {
+			"type": "float",
+			"description": "Valor total dos produtos)"
+		},
 		"camposPersonalizados": {
 			"type": "object",
 			"properties": {}
