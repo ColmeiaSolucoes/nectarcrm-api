@@ -110,3 +110,7 @@ A requisição deve conter:
 - Access-Token: SEU_TOKEN_AQUI
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
+
+
+##Integração RDStation
+Para informações de integração com RDStation, [clique aqui](./docs/rdstation)
