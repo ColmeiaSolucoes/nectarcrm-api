@@ -119,7 +119,16 @@
 			"type": "integer"
 		},
 		"tipo": {
-			"type": "string"
+			"type": "string",
+			"properties":{
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string",
+					"description": "Se não tiver id, ele procura pelo nome. Se não existir, cria automaticamente."
+				}
+			}
 		}
 	},
 	"required": [

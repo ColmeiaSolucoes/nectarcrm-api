@@ -62,6 +62,9 @@ Exemplo
           "nome": "Usuario 1"
         },
         "status": 1,
-        "tipo": "Reunião"
+        "tipo": {
+            "id": 1,
+            "nome": "Reunião"
+        }
       }
 ```

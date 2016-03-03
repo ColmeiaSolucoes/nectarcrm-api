@@ -69,7 +69,7 @@ Você pode optar por 2 caminhos:
 curl http://app.nectarcrm.com.br/crm/api/1/contatos/ -H "Access-Token: c5520d027fd1475b97a7a3aab50886f4"
 ```
 
-2. Enviar parâmetro na URL de requisição **api_token=**SEU_TOKEN**
+2. Enviar parâmetro na URL de requisição **api_token=** *SEU_TOKEN*
 ```
 curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b97a7a3aab50886f4
 ```
