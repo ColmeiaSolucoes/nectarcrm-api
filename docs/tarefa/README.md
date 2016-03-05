@@ -16,9 +16,9 @@ Propriedade | Tipo | Descricao
 autor | (object) | Autor do contato
 autorAtualizacao | (object) | Quem fez a última atualização
 cliente | (object) | Contato relacionado a venda
-dataAtualizacao | (datetime) | Última data de atualização
-dataCriacao | (datetime) | Data de criação desse contato
-dataLimite | (datetime) | Data limite para realizar a tarefa
+dataAtualizacao | (datetime iso8601) | Última data de atualização
+dataCriacao | (datetime iso8601) | Data de criação desse contato
+dataLimite | (datetime iso8601) | Data limite para realizar a tarefa
 descricao | (string) | Descrição do tarefa
 id | (long) | Identificador no sistema
 prioridade | (integer) | Prioridade da tarefa (0 = Normal, 1 = Alta, 2 = Altíssima)
@@ -34,7 +34,7 @@ Exemplo
           "id": 430,
           "nome": "Colmeia Soluções"
         },
-        "dataLimite": 1455391629560,
+	    "dataLimite":"2016-03-30T00:00:00-03:00",
         "descricao": "Tarefa tese descrição",
         "prioridade": 2,
         "responsavel": {

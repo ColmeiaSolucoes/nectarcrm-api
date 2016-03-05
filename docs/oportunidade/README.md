@@ -18,9 +18,9 @@ autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
 codigo | (string)(auto) | Código da oportunidade
-dataAtualizacao | (datetime) | Última data de atualização
-dataCriacao | (datetime) | Data de criação dessa oportunidade
-dataLimite | (datetime) | Data limite de fechamento da oportunidade
+dataAtualizacao | (datetime iso8601) | Última data de atualização
+dataCriacao | (datetime iso8601) | Data de criação dessa oportunidade
+dataLimite | (datetime iso8601) | Data limite de fechamento da oportunidade
 etapa | (integer) | Etapa atual do fluxo de venda
 id | (long) | Identificador no sistema
 isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
@@ -46,7 +46,7 @@ Exemplo
           "id": 141960,
           "nome": "Cliente 1"
         },
-        "dataLimite": 1455760800000,
+	    "dataLimite":"2016-03-11T10:00:00-03:00",
         "produtos": [
             {
                 "comissaoPorcentual": false,

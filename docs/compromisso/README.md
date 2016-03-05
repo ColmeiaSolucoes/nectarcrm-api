@@ -18,9 +18,9 @@ autor | (object) | Autor do compromisso
 autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
-dataAtualizacao | (datetime) | Última data de atualização
-dataCriacao | (datetime) | Data de criação desse compromisso
-dataInicio | (datetime) | Data do inicio do compromisso
+dataAtualizacao | (datetime iso8601) | Última data de atualização
+dataCriacao | (datetime iso8601) | Data de criação desse compromisso
+dataInicio | (datetime iso8601) | Data do inicio do compromisso
 dataFim | (datetime) | Data do final do compromisso
 descricao | (string) | Descrição do compromisso
 diaInteiro | (boolean) | Marca se o compromisso dura o dia inteiro
@@ -43,8 +43,8 @@ Exemplo
           "id": 430,
           "nome": "Colmeia Soluções"
         },
-        "dataFim": 1424203259000,
-        "dataInicio": 1424080800000,
+        "dataInicio":"2016-03-30T10:00:00-0300",
+        "dataFim":"2016-03-30T12:00:00-0300",
         "descricao": "Feriado",
         "diaInteiro": false,
         "endereco": "Rua 07, 394  Setor Europa - São Paulo",

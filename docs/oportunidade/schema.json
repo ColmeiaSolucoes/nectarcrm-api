@@ -46,13 +46,16 @@
 			"type": "string"
 		},
 		"dataAtualizacao": {
-			"type": "timestamp"
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		},
 		"dataCriacao": {
-			"type": "timestamp"
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		},
 		"dataLimite": {
-			"type": "timestamp"
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		},
 		"etapa": {
 			"type": "integer"
