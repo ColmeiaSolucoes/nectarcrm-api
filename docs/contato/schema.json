@@ -86,6 +86,9 @@
 		"linkedin": {
 			"type": "string"
 		},
+		"lista": {
+			"type": "string"
+		},
 		"nome": {
 			"type": "string"
 		},

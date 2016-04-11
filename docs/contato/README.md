@@ -29,6 +29,7 @@ facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
 linkedin | (string) | Linkedin
+lista | (string) | Lista relacionada do contato
 nome | (string) | Nome do contato
 observacao | (string) | Observação do contato
 origem | (string) | Origem do contato (se não tiver, será criado)
@@ -74,6 +75,7 @@ Exemplo
         "facebook": "facebook1",
         "indicadoPor": "Fulano",
         "linkedin": "linkedin1",
+        "lista": "Lista 1",
         "nome": "Contato 1",
         "observacao": "Observação qualquer",
         "origem": "Telefone",
