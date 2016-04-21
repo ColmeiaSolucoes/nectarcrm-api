@@ -7,6 +7,9 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/tarefas/
 
+Parâmetros de listagem:
+* &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista todos objetos)
+
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
 Schema Info | [Schema JSON](schema.json)
