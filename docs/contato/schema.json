@@ -83,6 +83,9 @@
 		"indicadoPor": {
 			"type": "string"
 		},
+		"isEmpresa": {
+			"type": "boolean"
+		},
 		"linkedin": {
 			"type": "string"
 		},

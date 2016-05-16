@@ -31,6 +31,7 @@ emails | (array)["string"] | E-mails do contato
 facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
+isEmpresa | (string) | Campo que diz se é ou não empresa (PJ ou PF)
 linkedin | (string) | Linkedin
 lista | (string) | Lista relacionada do contato
 nome | (string) | Nome do contato
@@ -77,12 +78,13 @@ Exemplo
         ],
         "facebook": "facebook1",
         "indicadoPor": "Fulano",
+        "isJuridico": true,
         "linkedin": "linkedin1",
         "lista": "Lista 1",
-        "nome": "Contato 1",
+        "nome": "Empresa 1",
         "observacao": "Observação qualquer",
         "origem": "Telefone",
-        "razaoSocial": "Contato 1 LTDA",
+        "razaoSocial": "Empresa 1 LTDA",
         "receitaAnual": "R$ 10.000.000,00",
         "responsavel": {
           "id": 12,
