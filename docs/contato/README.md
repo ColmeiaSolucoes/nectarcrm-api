@@ -28,6 +28,7 @@ contatos | (array)(contato) | Contatos relacionados (pessoas)
 dataAtualizacao | (datetime) | Última data de atualização
 dataCriacao | (datetime) | Data de criação desse contato
 emails | (array)["string"] | E-mails do contato
+enderecos | (array)["object"] | Endereços do contato
 facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
@@ -74,6 +75,21 @@ Exemplo
               "emails": [
                   "novo@trial.com.br"
                 ]
+          }
+        ],
+        "enderecos": [
+          {
+            "bairro": "Jardim São Paulo",
+            "cep": "08465000",
+            "complemento": "N 100",
+            "estado": "São Paulo",
+            "id": 10318,
+            "logradouro": "Rua 111",
+            "municipio": "São Paulo",
+            "numero": "0",
+            "pais": "Brasil",
+            "principal": true,
+            "tipoEndereco": 2
           }
         ],
         "emails": [

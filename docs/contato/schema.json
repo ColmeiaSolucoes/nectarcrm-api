@@ -68,6 +68,12 @@
 			"type": "datetime",
 			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		},
+		"enderecos": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
 		"emails": {
 			"type": "array",
 			"items": {
