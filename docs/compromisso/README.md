@@ -30,6 +30,7 @@ diaInteiro | (boolean) | Marca se o compromisso dura o dia inteiro
 endereco | (string) | Endereço do compromisso
 id | (long) | Identificador no sistema
 local | (string) | Local do compromisso
+oportunidade | (object) | Oportunidade relacionado a venda
 participantes | (array)(object) | Lista dos participantes do compromisso
 responsavel | (object) | Quem será responsável por esse compromisso
 status | (integer) | Status da compromisso (0 = Aberto, 1 = Realizado, 2 = Cancelado)
@@ -51,6 +52,10 @@ Exemplo
         "descricao": "Feriado",
         "diaInteiro": false,
         "endereco": "Rua 07, 394  Setor Europa - São Paulo",
+        "oportunidade": {
+          "id": 1,
+          "nome": "Oportunidade de venda"
+        },
         "participantes": [
           {
             "id": 12,

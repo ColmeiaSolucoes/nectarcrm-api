@@ -24,6 +24,7 @@ dataCriacao | (datetime iso8601) | Data de criação desse contato
 dataLimite | (datetime iso8601) | Data limite para realizar a tarefa
 descricao | (string) | Descrição do tarefa
 id | (long) | Identificador no sistema
+oportunidade | (object) | Oportunidade relacionado a venda
 prioridade | (integer) | Prioridade da tarefa (0 = Normal, 1 = Alta, 2 = Altíssima)
 responsavel | (object) | Quem será responsável por esse contato
 status | (integer) | Status da tarefa (0 = Aberta, 1 = Concluída, 2 = Cancelada, 3 = Em execução)
@@ -39,6 +40,10 @@ Exemplo
         },
 	    "dataLimite":"2016-03-30T00:00:00-03:00",
         "descricao": "Tarefa tese descrição",
+		"oportunidade": {
+			"id": 1,
+			"nome": "Oportunidade de venda"
+		},
         "prioridade": 2,
         "responsavel": {
           "id": 12,

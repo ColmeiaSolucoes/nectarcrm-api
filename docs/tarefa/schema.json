@@ -61,6 +61,18 @@
 		"id": {
 			"type": "integer"
 		},
+		"oportunidade": {
+			"id": "oportunidade",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
 		"prioridade": {
 			"type": "integer"
 		},

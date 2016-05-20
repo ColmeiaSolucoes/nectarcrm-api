@@ -85,6 +85,18 @@
 		"local": {
 			"type": "string"
 		},
+		"oportunidade": {
+			"id": "oportunidade",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
 		"participantes": {
 			"type": "array",
 			"items": {

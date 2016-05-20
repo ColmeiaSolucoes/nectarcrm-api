@@ -46,6 +46,9 @@ site | (string) | Website do contato
 skype | (string) | Skype do contato
 telefones | (array)["string"] | Telefones do contato
 twitter | (string) | Twitter do contato
+compromissos | (integer) | Quantidade de compromissos pendentes
+oportunidades | (integer) | Quantidade de oportunidades pendentes
+tarefas | (integer) | Quantidade de tarefas pendentes
 
 
 Exemplo

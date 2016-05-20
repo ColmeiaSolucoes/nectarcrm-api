@@ -63,6 +63,18 @@
 		"id": {
 			"type": "integer"
 		},
+		"nome": {
+			"type": "string"
+		},
+		"observacao": {
+			"type": "string"
+		},
+		"pipeline": {
+			"type": "string"
+		},
+		"probabilidade": {
+			"type": "integer"
+		},
 		"produtos": {
 			"type": "array",
 			"items": [{
@@ -107,18 +119,6 @@
 				}
 			}]
 		},
-		"nome": {
-			"type": "string"
-		},
-		"observacao": {
-			"type": "string"
-		},
-		"pipeline": {
-			"type": "string"
-		},
-		"probabilidade": {
-			"type": "integer"
-		},
 		"responsavel": {
 			"type": "object",
 			"properties": {
@@ -151,13 +151,17 @@
 			"type": "float",
 			"description": "Valor total dos descontos)"
 		},
-		"valorTotalProdutos": {
-			"type": "float",
-			"description": "Valor total dos produtos)"
-		},
 		"camposPersonalizados": {
 			"type": "object",
 			"properties": {}
+		},
+		"tarefas": {
+			"type": "int",
+			"description": "Quantidade total de tarefas pendentes"
+		},
+		"compromissos": {
+			"type": "int",
+			"description": "Quantidade total de compromissos pendentes"
 		}
 	},
 	"required": [

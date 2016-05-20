@@ -144,6 +144,18 @@
 		},
 		"twitter": {
 			"type": "string"
+		},
+		"tarefas": {
+			"type": "int",
+			"description": "Quantidade total de tarefas pendentes"
+		},
+		"compromissos": {
+			"type": "int",
+			"description": "Quantidade total de compromissos pendentes"
+		},
+		"oportunidades": {
+			"type": "int",
+			"description": "Quantidade total de oportunidades pendentes"
 		}
 	},
 	"required": [

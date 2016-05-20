@@ -27,18 +27,19 @@ dataLimite | (datetime iso8601) | Data limite de fechamento da oportunidade
 etapa | (integer) | Etapa atual do fluxo de venda
 id | (long) | Identificador no sistema
 isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
-produtos | (array)(object) | Itens e produtos
 nome | (string) | Nome do contato
 observacao | (string) | Observação da oportunidade
 pipeline | (object) | Fluxo de venda / Pipeline
 probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
+produtos | (array)(object) | Itens e produtos
 responsavel | (object) | Quem será responsável por essa oportunidade
 status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado)
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
 valorTotal | (float) | Valor total da venda (todos produtos e descontos)
 valorTotalDescontos | (float) | Valor total dos descontos
-valorTotalProdutos | (float) | Valor total dos produtos
+compromissos | (integer) | Quantidade de compromissos pendentes
+tarefas | (integer) | Quantidade de tarefas pendentes
 
 Exemplo
 ```js
