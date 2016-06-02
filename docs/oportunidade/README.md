@@ -57,7 +57,7 @@ Exemplo
                 "desconto": 0,
                 "descontoPorcentual": false,
                 "refId": 8435, //ID do produto cadastrado
-                "nome": "Produto 1",
+                "nome": "Produto 1", //aqui serve o nome ou o código editado na tabela do produto
                 "quantidade": 6, //quantidade de produtos
                 "recorrencia": 1, //0 = Avulso, 1 = Mensal, 2 = Anual (mensal x 12)
                 "valor": 69,
