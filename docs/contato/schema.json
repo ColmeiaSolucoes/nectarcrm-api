@@ -71,7 +71,19 @@
 		"enderecos": {
 			"type": "array",
 			"items": {
-				"type": "object"
+				"type": "object",
+				"properties": {
+					"bairro": "string",
+					"cep": "string",
+					"complemento": "string",
+					"estado": "string",
+					"logradouro": "string",
+					"municipio": "string",
+					"numero": "string",
+					"pais": "string",
+					"principal": "boolean",
+					"tipo": "integer" //RESIDENCIAL = 0 / CORRESPONDENCIA = 1 / COMERCIAL_MATRIZ = 2 / COMERCIAL_FILIAL = 3 / COMERCIAL_RURAL = 4 / COMERCIAL_RURAL = 5
+				}
 			}
 		},
 		"emails": {
