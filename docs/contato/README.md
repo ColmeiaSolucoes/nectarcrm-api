@@ -88,7 +88,7 @@ Exemplo
             "numero": "0",
             "pais": "Brasil",
             "principal": true,
-            "tipoEndereco": 2 //RESIDENCIAL = 0 / CORRESPONDENCIA = 1 / COMERCIAL_MATRIZ = 2 / COMERCIAL_FILIAL = 3 / COMERCIAL_RURAL = 4 / COMERCIAL_RURAL = 5
+            "tipo": 2 //RESIDENCIAL = 0 / CORRESPONDENCIA = 1 / COMERCIAL_MATRIZ = 2 / COMERCIAL_FILIAL = 3 / COMERCIAL_RURAL = 4 / COMERCIAL_RURAL = 5
           }
         ],
         "emails": [
