@@ -18,6 +18,7 @@ Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 autor | (object) | Autor do contato
 autorAtualizacao | (object) | Quem fez a última atualização
+checklist | (object){"id", "nome"} | Checklist da tarefa (cadastrado, se não existir iremos incluir)
 cliente | (object) | Contato relacionado a venda
 dataAtualizacao | (datetime iso8601) | Última data de atualização
 dataCriacao | (datetime iso8601) | Data de criação desse contato
@@ -28,7 +29,7 @@ oportunidade | (object) | Oportunidade relacionado a venda
 prioridade | (integer) | Prioridade da tarefa (0 = Normal, 1 = Alta, 2 = Altíssima)
 responsavel | (object) | Quem será responsável por esse contato
 status | (integer) | Status da tarefa (0 = Aberta, 1 = Concluída, 2 = Cancelada, 3 = Em execução)
-tipo | (object){"id", "nome"} | Tipo do tarefa (cadastrado, se não existir iremos incluir)
+tipo | (integer) | Tipo da tarefa (0 = comum, 1 = ligação, 2 = notificação, 3 = e-mail, 4 = compromisso)
 titulo | (string) | Titulo da tarefa
 
 Exemplo

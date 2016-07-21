@@ -95,6 +95,9 @@
 		},
 		"titulo": {
 			"type": "string"
+		},
+		"tipo": {
+			"type": "integer"
 		}
 	},
 	"required": [
