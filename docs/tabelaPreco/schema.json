@@ -1,0 +1,38 @@
+/** 
+ * Schema do Objeto Produto
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"dataCriacao": {
+			"type": "datetime"
+		},
+		"dataExpiracao": {
+			"type": "date"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"nome": {
+			"type": "string"
+		},
+		"produtos": {
+			"type": "array",
+			"properties": {
+				"type": "Produto"
+			}
+		},
+		"quantidadeProdutos": {
+			"type": "integer"
+		}
+	},
+	"required": [
+		"nome"
+	]
+}

@@ -1,0 +1,83 @@
+/** 
+ * Schema do Objeto Produto
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"categoria": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"ativo": {
+					"type": "boolean"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"codigo": {
+			"type": "string"
+		},
+		"comissao": {
+			"type": "float"
+		},
+		"comissaoPorcentual": {
+			"type": "boolean"
+		},
+		"contador": {
+			"type": "integer"
+		},
+		"descontoMaximo": {
+			"type": "float"
+		},
+		"descontoPorcentual": {
+			"type": "boolean"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"moeda": {
+			"type": "string"
+		},
+		"nome": {
+			"type": "string"
+		},
+		"permiteDesconto": {
+			"type": "boolean"
+		},
+		"possuiEstoque": {
+			"type": "boolean"
+		},
+		"recorrencia": {
+			"type": "integer",
+			"description": "0 = Único, 1 = Mensal, 2 = Anual"
+		},
+		"subCategoria": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"ativo": {
+					"type": "boolean"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"valorBase": {
+			"type": "float"
+		}
+	},
+	"required": [
+		"nome",
+		"valorBase"
+	]
+}

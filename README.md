@@ -102,6 +102,8 @@ Segue as seções que você pode acessar pela API
 - [/oportunidades](./docs/oportunidade)
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
+- [/produto](./docs/produto)
+- [/tabelaPreco](./docs/tabelaPreco)
 
 ### Header
 A requisição deve conter:
