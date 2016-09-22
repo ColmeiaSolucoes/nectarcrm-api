@@ -1,0 +1,35 @@
+/** 
+ * Schema do Objeto Categoria
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"isCliente": {
+			"type": "boolean"
+		},
+		"isProspect": {
+			"type": "boolean"
+		},
+		"isSuspect": {
+			"type": "boolean"
+		},
+		"isLead": {
+			"type": "boolean"
+		},
+		"nome": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"nome"
+	]
+}

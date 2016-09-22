@@ -98,12 +98,20 @@ curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b9
 
 Segue as seções que você pode acessar pela API
 
+Principais:
+
 - [/contatos](./docs/contato)
 - [/oportunidades](./docs/oportunidade)
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
+
+Tabelas administrativas
 - [/produto](./docs/produto)
 - [/tabelaPreco](./docs/tabelaPreco)
+- [/lista](./docs/lista)
+- [/origem](./docs/origem)
+- [/segmento](./docs/segmento)
+- [/categoria](./docs/categoria)
 
 ### Header
 A requisição deve conter:

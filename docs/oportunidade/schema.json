@@ -1,5 +1,5 @@
 /** 
- * Schema do Objeto Oportunidade
+ * Schema do Objeto Lista
  */
 {
 	"type": "object",
