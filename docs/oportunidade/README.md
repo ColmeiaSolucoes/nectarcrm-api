@@ -29,6 +29,7 @@ id | (long) | Identificador no sistema
 isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
 nome | (string) | Nome do contato
 observacao | (string) | Observação da oportunidade
+origem | (object) | Origem da oportunidade
 pipeline | (object) | Fluxo de venda / Pipeline
 probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
 produtos | (array)(object) | Itens e produtos
@@ -71,6 +72,10 @@ Exemplo
           "id": 12,
           "login": "contato1@teste.com.br",  //se nao tiver id, procura por esse
           "nome": "Usuario 1"  //se nao tiver id, procura por esse
+        },
+        "origem": {
+          "id": 1,
+          "nome": "Indicação"
         },
         "status": 1, //Em andamento
         "valorAvulso": 500000, //R$ 500.000

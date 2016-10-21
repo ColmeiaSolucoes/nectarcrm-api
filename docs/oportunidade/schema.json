@@ -69,6 +69,15 @@
 		"observacao": {
 			"type": "string"
 		},
+		"origem": {
+			"id": "origem da oportunidade",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				}
+			}
+		},
 		"pipeline": {
 			"type": "string"
 		},
