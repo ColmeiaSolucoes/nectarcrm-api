@@ -22,6 +22,13 @@ Seguimos a estrutura padrão do estilo [RESTful](https://en.wikipedia.org/wiki/R
 - PUT: atualização de dados
 - DELETE: remoção de dados
 
+Dica: quando estiver listando, você pode escolher os campos que deseja trazer enviando o parametro "attribute" na URL.
+
+Exemplo:
+/crm/api/1/oportunidades?attribute=id&attribute=nome
+Apenas id e nome virá na listagem.
+
+
 ### Retorno
 
 
@@ -120,7 +127,6 @@ A requisição deve conter:
 - Access-Token: SEU_TOKEN_AQUI
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
-
 
 ##Integração RDStation
 Para informações de integração com RDStation, [clique aqui](./docs/rdstation)
