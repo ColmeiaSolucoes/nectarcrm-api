@@ -35,12 +35,15 @@ probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
 produtos | (array)(object) | Itens e produtos
 responsavel | (object) | Quem será responsável por essa oportunidade
 status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado)
+temperatura | (string)* | Temperatura da oportunidade medida pela probabilidade de fechamento da oportunidade (Frio: < 25 / Morno: >= 25 e < 50 / Quente: >=50 e < 75 / Muito Quente: >= 75)
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
 valorTotal | (float) | Valor total da venda (todos produtos e descontos)
 valorTotalDescontos | (float) | Valor total dos descontos
 compromissos | (integer) | Quantidade de compromissos pendentes
 tarefas | (integer) | Quantidade de tarefas pendentes
+
+\* readonly
 
 Exemplo
 ```js
