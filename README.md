@@ -11,7 +11,8 @@ Esta API permite o controle total dos contatos, oportunidades, tarefas e comprim
 ## Instruções para realizar a integração
 
 ### URL de acesso
-http://app.nectarcrm.com.br/crm/api/1/
+https://app.nectarcrm.com.br/crm/api/1/
+######Obs: utilize o HTTPS, pois o HTTP ainda funciona vai ser desabilitado em breve
 
 ### Requisição HTTP
 
