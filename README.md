@@ -5,7 +5,7 @@
 
   **Nota:** Qualquer erro ou sugestão, por favor nos contate.
 
-Esta API permite o controle total dos contatos, oportunidades, tarefas e comprimissos. Veja as instruções de como realizar a integração abaixo.
+Esta API permite o controle total dos contatos, oportunidades, tarefas e compromissos. Veja as instruções de como realizar a integração abaixo.
 ###[Clique aqui para a documentação completa](http://docs.nectarcrm.apiary.io)
 
 ## Instruções para realizar a integração
@@ -23,7 +23,7 @@ Seguimos a estrutura padrão do estilo [RESTful](https://en.wikipedia.org/wiki/R
 - PUT: atualização de dados
 - DELETE: remoção de dados
 
-Dica: quando estiver listando, você pode escolher os campos que deseja trazer enviando o parametro "attribute" na URL.
+Dica: quando estiver listando, você pode escolher os campos que deseja trazer enviando o parâmetro "attribute" na URL.
 
 Exemplo:
 /crm/api/1/oportunidades?attribute=id&attribute=nome
