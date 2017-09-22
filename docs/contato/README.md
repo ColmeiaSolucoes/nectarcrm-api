@@ -104,7 +104,7 @@ Exemplo
         "observacao": "Observação qualquer",
         "origem": "Telefone",
         "razaoSocial": "Empresa 1 LTDA",
-        "receitaAnual": "R$ 10.000.000,00",
+        "receitaAnual": 10000000,
         "responsavel": {
           "id": 12,
           "login": "contato1@teste.com.br", //se nao tiver id, procura por esse
