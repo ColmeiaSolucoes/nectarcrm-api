@@ -21,7 +21,7 @@ Parâmetros de listagem:
 * Data atualização: 
     * Inicio: &dataInicioAtualizacao=dd/MM/yyyy
     * Fim: &dataFimAtualizacao=dd/MM/yyyy
-* Responsáveis: &usuariosId=X,Y - onde X e Y = ids do objeto [/usuario](../docs/usuario)
+* Responsáveis: &usuariosId=X,Y - onde X e Y = ids do objeto [/usuario](../usuario)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 

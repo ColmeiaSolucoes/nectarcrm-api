@@ -16,9 +16,9 @@ Parâmetros de listagem:
 * Data atualização: 
     * Inicio: &dataInicioAtualizacao=dd/MM/yyyy
     * Fim: &dataFimAtualizacao=dd/MM/yyyy
-* Responsáveis: &responsaveisId=X,Y - onde X e Y = ids do objeto [/usuario](../docs/usuario)
-* Origem: &origemId=x (integer) = ids do objeto [/origem](../docs/origem)
-* Segmento: &segmentoId=x (integer) = ids do objeto [/segmento](../docs/segmento)
+* Responsáveis: &responsaveisId=X,Y - onde X e Y = ids do objeto [/usuario](../usuario)
+* Origem: &origemId=x (integer) = ids do objeto [/origem](../origem)
+* Segmento: &segmentoId=x (integer) = ids do objeto [/segmento](../segmento)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
