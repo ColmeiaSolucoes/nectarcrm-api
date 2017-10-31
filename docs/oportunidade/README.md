@@ -22,10 +22,10 @@ Parâmetros de listagem:
 + &nome (optional, string) - Nome ou código da oportunidade
 + &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 4 = contatos relacionados, 5 = descartados)
 + &categoriasId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/categoria](../categoria) de contato
-+ &produtosIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Produto
++ &produtosIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/produto](../produto)
 + &categoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Categoria de Produto
 + &subcategoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto SubCategoria de Produto
-+ &listasIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Lista
++ &listasIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/lista](../lista)
 + &origensId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/origem](../origem)
 + &origensContatoId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/origem](../origem) do contato
 + &segmentosId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/segmento](../segmento)

@@ -10,15 +10,16 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
 Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 + &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
++ &nome (optional, string) - Nome ou código do contato
 + &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 4 = contatos relacionados, 5 = descartados
 + &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)
 + &dataFim (optional, date) - Data de criação final (dd/MM/yyyy)
 + &dataInicioAtualizacao (optional, date) - Data atualização inicial (dd/MM/yyyy)
 + &dataFimAtualizacao (optional, date) - Data atualização final (dd/MM/yyyy)
-+ &listasIds (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto Lista
-+ &origemId (optional, int) - id do objeto Origem
-+ &segmentoId (optional, int) - id do objeto Segmento
-+ &responsaveisId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto Usuario
++ &listasIds (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto  [/lista](../lista)
++ &origemId (optional, int) - id do objeto [/origem](../origem)
++ &segmentoId (optional, int) - id do objeto [/segmento](../segmento)
++ &responsaveisId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
