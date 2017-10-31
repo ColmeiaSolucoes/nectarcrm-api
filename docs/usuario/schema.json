@@ -1,5 +1,5 @@
 /** 
- * Schema do Objeto de tipos
+ * Schema do Objeto de usuário
  */
 {
 	"type": "object",
@@ -7,17 +7,29 @@
 		"ativo": {
 			"type": "boolean"
 		},
-		"descricao": {
-			"type": "string"
-		},
 		"id": {
 			"type": "integer"
 		},
+		"dataAtualizacao": {
+			"type": "date"
+		},
+		"dataCriacao": {
+			"type": "date"
+		},
+		"email": {
+			"type": "string"
+		},
+		"foto": {
+			"type": "string"
+		},
 		"nome": {
+			"type": "string"
+		},
+		"login": {
 			"type": "string"
 		}
 	},
 	"required": [
-		"nome"
+		"nome", "login", "email"
 	]
 }

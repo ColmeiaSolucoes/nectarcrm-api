@@ -13,25 +13,31 @@ http://app.nectarcrm.com.br/crm/api/1/usuario/
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 
-[Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
-
 Schema Info | [Schema JSON](schema.json)
 
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
-ativo | (boolean) | Marca se essa origem está ativa para utilização
-descricao | (string) | Descrição da origem
+ativo | (boolean) | Marca se esse usuário está ativa para utilização
+dataAtualizacao | (date) | Data da última atualização
+dataCriacao | (date) | Data de criação
+email | (string) | E-mail de acesso
+foto | (string) | Imagem da foto do usuário 
 id | (long) | Identificador no sistema
-nome | (string) | Nome da origem
+login | (string) | Login utilizado do usuário
+nome | (string) | Nome do usuário
 
 Exemplo
 ```js
     [
       {
         "ativo": true,
-        "descricao": "Uma descricao qualquer"
+        "dataAtualizacao": "2017-10-30T07:13:31-02:00",
+        "dataCriacao": "2015-01-19T03:40:25-02:00",
+        "email": "email@dominio.com.br",
+        "foto": "imagem.png",
         "id": 1,
-        "nome": "Tipo de teste",
+        "login": "login_do_usuario",
+        "nome": "Nome do usuario"
       }
     ]
 ```

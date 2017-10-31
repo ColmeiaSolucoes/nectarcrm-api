@@ -9,6 +9,14 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
 
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
+* Seção: &constante=x (integer 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 4 = contatos relacionados, 5 = descartados)
+* Data de criação: 
+    * Inicio: &dataInicio=dd/MM/yyyy
+    * Fim: &dataFim=dd/MM/yyyy
+* Data atualização: 
+    * Inicio: &dataInicioAtualizacao=dd/MM/yyyy
+    * Fim: &dataFimAtualizacao=dd/MM/yyyy
+* Responsáveis: &responsaveisId=X,Y - onde X e Y = ids do objeto [/usuario](./docs/usuario)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
