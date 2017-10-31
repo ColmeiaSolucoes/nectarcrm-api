@@ -13,3 +13,5 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/updateLead?api_token=<**TOKEN_NEC
 Utilizando essa URL, você pode configurar seu RDStation para enviar leads para o NectarCRM.
 
 Para entender como fazer isso no seu RDStation, entre em contato com o pessoal de suporte deles.
+
+Mais informações: [Artigo de integração RDStation](http://docs.nectarcrm.com.br/central-de-ajuda/rd-station/como-integrar-rd-station)

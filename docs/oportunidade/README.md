@@ -11,17 +11,25 @@ Parâmetros de listagem:
 * Páginação: 
     * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
     * &displayLength=x (integer) - Quantidade de objetos por página (máximo 200)
-* Status/Fase: &status=x (integer 1 = em andamento, 2 = ganha, 3 = perdida, 4 = descartada)
-* Data de criação: 
-    * Inicio: &dataInicio=dd/MM/yyyy
-    * Fim: &dataFim=dd/MM/yyyy
-* Data limite: 
-    * Inicio: &dataInicioLimite=dd/MM/yyyy
-    * Fim: &dataFimLimite=dd/MM/yyyy
-* Data atualização: 
-    * Inicio: &dataInicioAtualizacao=dd/MM/yyyy
-    * Fim: &dataFimAtualizacao=dd/MM/yyyy
-* Responsáveis: &usuariosId=X,Y - onde X e Y = ids do objeto [/usuario](../usuario)
+* &status (optional, int) - Status/Fase da oportunidade (integer 1 = em andamento, 2 = ganha, 3 = perdida, 4 = descartada)
++ &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
++ &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)
++ &dataFim (optional, date) - Data de criação final (dd/MM/yyyy)
++ &dataInicioAtualizacao (optional, date) - Data atualização inicial (dd/MM/yyyy)
++ &dataFimAtualizacao (optional, date) - Data atualização final (dd/MM/yyyy)
++ &dataInicioLimite (optional, date) - Data limite inicial (dd/MM/yyyy)
++ &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
++ &nome (optional, string) - Nome ou código da oportunidade
++ &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 4 = contatos relacionados, 5 = descartados)
++ &categoriasId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/categoria](../categoria) de contato
++ &produtosIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Produto
++ &categoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Categoria de Produto
++ &subcategoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto SubCategoria de Produto
++ &listasIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Lista
++ &origensId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/origem](../origem)
++ &origensContatoId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/origem](../origem) do contato
++ &segmentosId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/segmento](../segmento)
++ &usuariosId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
