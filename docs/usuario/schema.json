@@ -1,0 +1,23 @@
+/** 
+ * Schema do Objeto de tipos
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"nome": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"nome"
+	]
+}

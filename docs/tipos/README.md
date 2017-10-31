@@ -13,8 +13,8 @@ http://app.nectarcrm.com.br/crm/api/1/compromissos/tipos/
 http://app.nectarcrm.com.br/crm/api/1/ligacao/tipos/
 
 
-Parâmetros de origemgem:
-* &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista todos objetos)
+Parâmetros de listagem:
+* &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 

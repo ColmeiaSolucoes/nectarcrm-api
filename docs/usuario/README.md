@@ -1,13 +1,16 @@
-# Origem Resource
+# Tipos - cadastros administrativos
 
-Esta API permite o controle total das origens de contato. Veja as instruções de como realizar a integração abaixo.
+Esta API permite o controle dos usuários do sistema.
 
 Instruções para realizar a integração:
 
-URL
-http://app.nectarcrm.com.br/crm/api/1/origem/
+### URLs disponíveis
 
-Parâmetros de origemgem:
+##### Usuário:
+http://app.nectarcrm.com.br/crm/api/1/usuario/
+
+
+Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
@@ -26,9 +29,9 @@ Exemplo
     [
       {
         "ativo": true,
-        "descricao": "Evento que realizamos"
+        "descricao": "Uma descricao qualquer"
         "id": 1,
-        "nome": "Eventos",
+        "nome": "Tipo de teste",
       }
     ]
 ```

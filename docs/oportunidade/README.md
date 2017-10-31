@@ -8,7 +8,20 @@ URL
 http://app.nectarcrm.com.br/crm/api/1/oportunidades/
 
 Parâmetros de listagem:
-* &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista todos objetos)
+* Páginação: 
+    * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
+    * &displayLength=x (integer) - Quantidade de objetos por página (máximo 200)
+* Status/Fase: &status=x (integer 1 = em andamento, 2 = ganha, 3 = perdida, 4 = descartada)
+* Data de criação: 
+    * Inicio: &dataInicio=dd/MM/yyyy
+    * Fim: &dataFim=dd/MM/yyyy
+* Data limite: 
+    * Inicio: &dataInicioLimite=dd/MM/yyyy
+    * Fim: &dataFimLimite=dd/MM/yyyy
+* Data atualização: 
+    * Inicio: &dataInicioAtualizacao=dd/MM/yyyy
+    * Fim: &dataFimAtualizacao=dd/MM/yyyy
+* Responsáveis: &usuariosId=X,Y - onde X e Y = ids do objeto [/usuario](./docs/usuario)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
