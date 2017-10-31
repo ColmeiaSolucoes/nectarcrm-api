@@ -121,6 +121,7 @@ Tabelas administrativas
 - [/segmento](./docs/segmento)
 - [/categoria](./docs/categoria)
 - [Tipos - cadastros administrativos](./docs/tipos)
+- [/usuario](./docs/usuario)
 
 ### Header
 A requisição deve conter:
