@@ -101,6 +101,25 @@ curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b9
 
         Erro do servidor
 
+## Padrões de listagens
+
+Em todas listagem existem os padrões que seguimos para paginação e busca.
+
+### Parâmetros
++ &page 
+
+    Número da página de listagem (integer)
+    
++ &displayLength
+
+    Quantidade de objetos a serem listados por página (máximo 200)
+    
+### Busca
+
++ &exato
+
+    Faz a busca exata pelo campo pedido. Se tiver colocado &nome=test, ele buscará por qualquer coisa começada com "test". Porém, com o parâmetro &exato=true, ele somente encontrará o item com nome igual a "test"
+
 
 ### Seções disponíveis
 
