@@ -1,0 +1,35 @@
+/** 
+ * Schema do Objeto Categoria de produto
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"nome": {
+			"type": "string"
+		},
+		"subCategorias": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": "integer",
+					"nome": "string",
+					"descricao": "string",
+					"ativo": "boolean"
+				}
+			}
+		}
+	},
+	"required": [
+		"nome"
+	]
+}
