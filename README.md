@@ -134,6 +134,8 @@ Principais:
 
 Tabelas administrativas
 - [/produto](./docs/produto)
+- [/produtoCategoria](./docs/produtoCategoria)
+- [/produtoSubCategoria](./docs/produtoSubCategoria)
 - [/tabelaPreco](./docs/tabelaPreco)
 - [/lista](./docs/lista)
 - [/origem](./docs/origem)
