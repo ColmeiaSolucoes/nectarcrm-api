@@ -20,6 +20,9 @@ Parâmetros de listagem:
 + &origemId (optional, int) - id do objeto [/origem](../origem)
 + &segmentoId (optional, int) - id do objeto [/segmento](../segmento)
 + &responsaveisId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
++ &camposPersonalizados (optional, json) - filtro de campos personalizados
++ &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.  
++ &exato (optional, boolean default false) - deixa a busca exata (encontra exatamente o valor digitado)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 

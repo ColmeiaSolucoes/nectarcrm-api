@@ -30,6 +30,8 @@ Parâmetros de listagem:
 + &origensContatoId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/origem](../origem) do contato
 + &segmentosId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/segmento](../segmento)
 + &usuariosId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
++ &camposPersonalizados (optional, json) - filtro de campos personalizados
++ &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
