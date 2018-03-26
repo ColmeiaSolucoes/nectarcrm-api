@@ -26,7 +26,7 @@ Exemplo
     [
       {
         "ativo": true,
-        "cescricao": "Manutenção de computadores",
+        "descricao": "Manutenção de computadores",
         "id": 1,
         "nome": "Manutenção de PCs",
       }
