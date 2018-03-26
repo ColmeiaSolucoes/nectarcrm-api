@@ -17,6 +17,7 @@ Schema Info | [Schema JSON](schema.json)
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 ativo | (boolean) | Marca se essa subCategoria de produto está ativa para utilização
+categoria | (object) | Categoria relacionada a essa subCategoria
 descricao | (string) | Descrição da subCategoria de produto
 id | (long) | Identificador no sistema
 nome | (string) | Nome da subCategoria de produto
@@ -29,6 +30,10 @@ Exemplo
         "descricao": "Manutenção de computadores",
         "id": 1,
         "nome": "Manutenção de PCs",
+        "categoria": {
+            "id": 2,
+            "nome": "Serviços de informática"
+        }
       }
     ]
 ```
