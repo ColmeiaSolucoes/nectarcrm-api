@@ -7,6 +7,18 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/contatos/
 
+
+### Endpoints disponíveis
+    Listagem: GET /contatos/
+    Inserção: POST /contatos/
+    Visualização: GET /contatos/{id}
+    Atualização: PUT /contatos/{id}
+    Exclusão: DELETE /contatos/
+    Procura por e-mail: GET /contatos/email/{email@dominio.*} (use * para busca por like)
+    Procura por telefone: GET /contatos/telefone/{6299999999*} (use * para busca por like)
+    Procura por CNPJ: GET /contatos/cnpj/{cnpj}
+    Procura por CPF: GET /contatos/cpf/{cpf}
+    
 Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 + &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
@@ -23,6 +35,13 @@ Parâmetros de listagem:
 + &camposPersonalizados (optional, json) - filtro de campos personalizados
 + &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.  
 + &exato (optional, boolean default false) - deixa a busca exata (encontra exatamente o valor digitado)
+
+    Dica: quando estiver listando, você pode escolher os campos que deseja trazer enviando o parâmetro "attribute" na URL.
+    
+    Exemplo:
+    /crm/api/1/contatos?attribute=id&attribute=nome
+    Apenas id e nome virá na listagem.
+
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 

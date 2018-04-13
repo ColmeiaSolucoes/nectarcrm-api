@@ -121,7 +121,15 @@ Em todas listagem existem os padrões que seguimos para paginação e busca.
     Faz a busca exata pelo campo pedido. Se tiver colocado &nome=test, ele buscará por qualquer coisa começada com "test". Porém, com o parâmetro &exato=true, ele somente encontrará o item com nome igual a "test"
 
 
-### Seções disponíveis
+### Padrão de endpoints
+    Para listagem, use GET: /endpoint/
+    Para inserção, use POST: /endpoint/
+    Para visualização, use GET: /endpoint/{id}
+    Para atualização, use PUT: /endpoint/{id}
+    Para exclusão, use DELETE: /endpoint/
+    
+    
+### Seções (endpoints) disponíveis
 
 Segue as seções que você pode acessar pela API
 
@@ -143,6 +151,8 @@ Tabelas administrativas
 - [/categoria](./docs/categoria)
 - [/tipos](./docs/tipos) (tipos de cadastros administrativos)
 - [/usuario](./docs/usuario)
+
+    
 
 ### Header
 A requisição deve conter:

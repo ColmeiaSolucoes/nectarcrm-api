@@ -7,6 +7,17 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/oportunidades/
 
+### Endpoints disponíveis
+    Listagem: GET /oportunidades/
+
+    Inserção: POST /oportunidades/
+    Visualização: GET /oportunidades/{id}
+    Atualização: PUT /oportunidades/{id}
+    Exclusão: DELETE /oportunidades/
+    Procura por e-mail: GET /oportunidades/email/{email@dominio.*} (use * para busca por like)
+    Procura por telefone: GET /oportunidades/telefone/{6299999999*} (use * para busca por like)
+    Procura por ID contato: GET /oportunidades/contatoId/{contatoId}
+    
 Parâmetros de listagem:
 * Páginação: 
     * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
@@ -33,6 +44,13 @@ Parâmetros de listagem:
 + &camposPersonalizados (optional, json) - filtro de campos personalizados
 + &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.
 
+
+    Dica: quando estiver listando, você pode escolher os campos que deseja trazer enviando o parâmetro "attribute" na URL.
+    
+    Exemplo:
+    /crm/api/1/oportunidades?attribute=id&attribute=nome
+    Apenas id e nome virá na listagem.
+    
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
 Schema Info | [Schema JSON](schema.json)
