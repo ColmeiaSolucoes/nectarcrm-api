@@ -19,16 +19,16 @@ Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 assunto | (string) | Assunto da nota/feedback
 automatica | (boolean) | Mostra se é uma publicação automatica (que o sistema criou)
-autor | (object[usuario](../usuario)) | Autor dessa publicação
-compromisso | (object[compromisso](../compromisso)) | Vincula essa publicação a compromisso
-contato | (object[contato](../contato)) | Vincula essa publicação a um contato
+autor | (object[[usuario](../usuario)]) | Autor dessa publicação
+compromisso | (object[[compromisso](../compromisso)]) | Vincula essa publicação a compromisso
+contato | (object[[contato](../contato)]) | Vincula essa publicação a um contato
 dataCriacao | (date) | Data da criação da publicação
 dataAtualizacao | (date) | Data da última atualização
 descricao | (html) | HTML do que foi escrito
 importante | (boolean) | Mostra se é uma publicação marcada como importante
-oportunidade | (object[oportunidade](../oportunidade)) | Vincula essa publicação a oportunidade
+oportunidade | (object[[oportunidade](../oportunidade)]) | Vincula essa publicação a oportunidade
 qtdeComentarios | (int) | Mostra a quantidade de comentários feitos nessa publicação
-tarefa | (object[tarefa](../tarefa)) | Vincula essa publicação a tarefa
+tarefa | (object[[tarefa](../tarefa)]) | Vincula essa publicação a tarefa
 
 Exemplo
 ```js

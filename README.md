@@ -139,6 +139,7 @@ Principais:
 - [/oportunidades](./docs/oportunidade)
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
+- [/publicacao](./docs/publicacao)
 
 Tabelas administrativas
 - [/produto](./docs/produto)
