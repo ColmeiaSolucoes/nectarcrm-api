@@ -1,0 +1,62 @@
+/** 
+ * Schema do Objeto Publicacao
+ */
+{
+	"type": "object",
+	"properties": {
+		"automatica": {
+			"type": "boolean"
+		},
+		"autor": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"dataCriacao": {
+			"type": "date"
+		},
+		"dataAtualizacao":  {
+			"type": "date"
+		},
+		"qtdeComentarios":  {
+			"type": "integer"
+		},
+		"oportunidade": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"contato": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"assunto":  {
+			"type": "string"
+		},
+		"descricao":  {
+			"type": "string"
+		}
+	},
+	"required": [
+		"descricao", "contato"
+	]
+}
