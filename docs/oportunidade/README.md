@@ -68,6 +68,7 @@ dataLimite | (datetime iso8601) | Data limite de fechamento da oportunidade
 etapa | (integer) | Etapa atual do fluxo de venda
 id | (long) | Identificador no sistema
 isProrrogada | (boolean) | Verdadeiro se estiver prorrogada
+justificativas | (array)(object) | Justificativas de conclusão de oportunidade
 nome | (string) | Nome do contato
 observacao | (string) | Observação da oportunidade
 origem | (object) | Origem da oportunidade
@@ -95,6 +96,15 @@ Exemplo
           "id": 141960,
           "nome": "Cliente 1"
         },
+        "justificativas": [
+            { 
+                "id": 10,
+                "nome": "Justificativa 1"
+            },
+            { 
+                "nome": "Justificativa sem ID passado buscamos pelo nome"
+            }
+        ],
 	    "dataLimite":"2016-03-11T10:00:00-03:00",
         "produtos": [
             {

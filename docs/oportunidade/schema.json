@@ -63,6 +63,21 @@
 		"id": {
 			"type": "integer"
 		},
+
+		"justificativas": {
+			"type": "array",
+			"items": [
+				{
+					"id": {
+						"type": "integer"
+					},
+					"nome": {
+						"type": "string"
+					}
+				}
+			]
+		},
+
 		"nome": {
 			"type": "string"
 		},
