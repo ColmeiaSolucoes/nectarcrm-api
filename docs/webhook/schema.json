@@ -1,0 +1,39 @@
+/** 
+ * Schema do Objeto Webhook
+ */
+{
+	"id": {
+		"type": "string"
+	},
+    "nome": {
+    	"type": "string"
+    },
+    "url": {
+    	"type": "string"
+    },
+    "contador": {
+    	"type": "integer"
+    },
+    "eventNumber": {
+    	"type": "integer"
+    },
+    "authType": {
+    	"type": "integer"
+    },
+    "authUser": {
+    	"type": "string"
+    },
+    "authPassword": {
+    	"type": "string"
+    },
+    "tokenBearer": {
+    	"type": "string"
+    },
+    "ativo": {
+    	"type": "string"
+    },
+	"required": [
+		"nome",
+		"url"
+	]
+}

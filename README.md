@@ -152,6 +152,7 @@ Tabelas administrativas
 - [/categoria](./docs/categoria)
 - [/tipos](./docs/tipos) (tipos de cadastros administrativos)
 - [/usuario](./docs/usuario)
+- [/webhook](./docs/webhook)
 
     
 
