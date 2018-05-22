@@ -186,6 +186,14 @@
 		"compromissos": {
 			"type": "int",
 			"description": "Quantidade total de compromissos pendentes"
+		},
+		"bloquearProposta": {
+			"type": "boolean",
+			"description": "Status do bloqueio de geração de proposta da oportunidade"
+		},
+		"bloquearConclusao": {
+			"type": "boolean",
+			"description": "Status do bloqueio de conclusão de oportunidade"
 		}
 	},
 	"required": [

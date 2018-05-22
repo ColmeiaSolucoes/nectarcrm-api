@@ -84,6 +84,8 @@ valorTotal | (float) | Valor total da venda (todos produtos e descontos)
 valorTotalDescontos | (float) | Valor total dos descontos
 compromissos | (integer) | Quantidade de compromissos pendentes
 tarefas | (integer) | Quantidade de tarefas pendentes
+bloquearProposta | (boolean) | Status do bloqueio para geração de proposta da oportunidade
+bloquearConclusao | (boolean) | Status do bloqueio para conclusão da oportunidade
 
 \* readonly
 
@@ -137,6 +139,8 @@ Exemplo
         "camposPersonalizados": {
             "Campo 1": "Valor 1",
             "Campo 2": "Valor 2"
-        }
+        },
+        bloquearProposta: false,
+        bloquearConclusao: false
     }
 ```
