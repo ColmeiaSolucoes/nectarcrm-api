@@ -1,5 +1,5 @@
 /** 
- * Schema do Objeto Lista
+ * Schema do Objeto Oportunidade
  */
 {
 	"type": "object",
@@ -95,6 +95,19 @@
 		},
 		"pipeline": {
 			"type": "string"
+		},
+		"funilVenda": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"id": "id",
+					"type": "integer"
+				},
+				"nome": {
+					"id": "nome",
+					"type": "string"
+				}
+			}
 		},
 		"probabilidade": {
 			"type": "integer"

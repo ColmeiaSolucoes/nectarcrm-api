@@ -72,7 +72,8 @@ justificativas | (array)(object) | Justificativas de conclusão de oportunidade
 nome | (string) | Nome do contato
 observacao | (string) | Observação da oportunidade
 origem | (object) | Origem da oportunidade
-pipeline | (object) | Fluxo de venda / Pipeline
+pipeline | (string) | Funil de venda / Pipeline em string (apenas "nome")
+funilVenda | (object) | Funil de venda / Pipeline em objeto (com nome e id)
 probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
 produtos | (array)(object) | Itens e produtos
 responsavel | (object) | Quem será responsável por essa oportunidade

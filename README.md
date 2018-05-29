@@ -137,6 +137,7 @@ Principais:
 
 - [/contatos](./docs/contato)
 - [/oportunidades](./docs/oportunidade)
+- [/qualificacoes](./docs/qualificacao)
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
 - [/publicacao](./docs/publicacao)
