@@ -61,6 +61,7 @@ autor | (object) | Autor da oportunidade
 autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
+contato | (object) | Pessoa (contato) relacionado a venda
 codigo | (string)(auto) | Código da oportunidade
 dataAtualizacao | (datetime iso8601) | Última data de atualização
 dataCriacao | (datetime iso8601) | Data de criação dessa oportunidade
@@ -98,6 +99,10 @@ Exemplo
         "cliente": {
           "id": 141960,
           "nome": "Cliente 1"
+        },
+        "contato": {
+          "id": 141961,
+          "nome": "Pessoa do cliente 1"
         },
         "justificativas": [
             { 

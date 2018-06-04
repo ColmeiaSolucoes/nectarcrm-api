@@ -42,6 +42,15 @@
 				}
 			}
 		},
+		"contato": {
+			"id": "contato",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				}
+			}
+		},
 		"codigo": {
 			"type": "string"
 		},
