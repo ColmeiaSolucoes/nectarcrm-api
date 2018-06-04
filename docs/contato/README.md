@@ -61,11 +61,11 @@ contatos | (array)(contato) | Contatos relacionados (pessoas)
 dataAtualizacao | (datetime) | Última data de atualização
 dataCriacao | (datetime) | Data de criação desse contato
 emails | (array)["string"] | E-mails do contato
+empresa | (boolean) | Campo que diz se é ou não empresa (PJ ou PF)
 enderecos | (array)["object"] | Endereços do contato
 facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
-isEmpresa | (string) | Campo que diz se é ou não empresa (PJ ou PF)
 linkedin | (string) | Linkedin
 lista | (string) | Lista relacionada do contato
 nome | (string) | Nome do contato
