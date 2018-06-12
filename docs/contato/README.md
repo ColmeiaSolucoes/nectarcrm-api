@@ -58,10 +58,12 @@ cnpj | (string) | CNPJ do contato
 cpf | (string) | CPF do contato
 constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 4 = Contatos relacionados, 5 = Descartados)
 contatos | (array)(contato) | Contatos relacionados (pessoas)
+contaPai | (object)["contato"] | Conta pai que esse contato se relaciona (diferente de empresaAtual) 
 dataAtualizacao | (datetime) | Última data de atualização
 dataCriacao | (datetime) | Data de criação desse contato
 emails | (array)["string"] | E-mails do contato
 empresa | (boolean) | Campo que diz se é ou não empresa (PJ ou PF)
+empresaAtual | (object)["contato"] | Empresa atual em que o contato está vinculado
 enderecos | (array)["object"] | Endereços do contato
 facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema

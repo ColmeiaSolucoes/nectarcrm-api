@@ -60,6 +60,10 @@
 			"type": "array(contato)",
 			"description":"Array de objetos do tipo contato (com mesmas propriedades desse schema Contato)"
 		},
+		"contaPai": {
+			"type": "object(contato)",
+			"description":"Conta pai que o contato se relaciona (diferente de empresaAtual)"
+		},
 		"dataAtualizacao": {
 			"type": "datetime",
 			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
@@ -67,6 +71,11 @@
 		"dataCriacao": {
 			"type": "datetime",
 			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
+		},
+
+		"empresaAtual": {
+			"type": "object(contato)",
+			"description":"Empresa atual em que o contato está vinculado"
 		},
 		"enderecos": {
 			"type": "array",
