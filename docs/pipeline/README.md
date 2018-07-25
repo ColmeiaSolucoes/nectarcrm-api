@@ -18,7 +18,6 @@ Schema Info | [Schema JSON](schema.json)
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 ativo | (boolean) | Marca se esse funil está ativo para utilização
-descricao | (string) | Descrição do funil
 id | (long) | Identificador no sistema
 nome | (string) | Nome do funil
 padrao | (boolean) | Determina se esse funil é o padrão do sistema
@@ -30,7 +29,6 @@ Exemplo
     [
       {
         "ativo": true,
-        "descricao": "Funil de vendas do produto X"
         "id": 1,
         "nome": "Funil de venda",
         "padrao": true,
