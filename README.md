@@ -141,6 +141,7 @@ Principais:
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
 - [/publicacao](./docs/publicacao)
+- [/pipelines](./docs/pipeline)
 
 Tabelas administrativas
 - [/produto](./docs/produto)

@@ -1,0 +1,34 @@
+/** 
+ * Schema do Objeto Pipeline
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"descricao": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"nome": {
+			"type": "string"
+		},
+		"padrao": {
+			"type": "boolean"
+		},
+		"sequencias": {
+			"type": "array",
+			"object": "PipelineSequencia"
+		},
+		"tipo": {
+			"type": "integer",
+			"description": "0 = Venda, 1 = Qualificação"
+		}
+	},
+	"required": [
+		"nome"
+	]
+}
