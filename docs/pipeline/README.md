@@ -9,6 +9,7 @@ http://app.nectarcrm.com.br/crm/api/1/pipeline/
 
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
+* &type=x (integer) Define o filtro de funil (0 = vendas, 1 = qualificação)
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
