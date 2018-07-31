@@ -181,7 +181,7 @@
 		"status": {
 			"id": "status",
 			"type": "integer",
-			"description": "1 = EM ANDAMENTO, 2 = GANHO, 3 = PERDIDO, 4 = CANCELADO"
+			"description": "1 = EM ANDAMENTO, 2 = GANHA, 3 = PERDIDA, 4 = CANCELADA, 5 = PRORROGADA"
 		},
 		"valorAvulso": {
 			"type": "float"
