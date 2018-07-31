@@ -32,6 +32,20 @@ status | (integer) | Status da tarefa (0 = Aberta, 1 = Concluída, 2 = Cancelada
 tipo | (integer) | Tipo da tarefa (0 = comum, 1 = ligação, 2 = notificação, 3 = e-mail, 4 = compromisso)
 titulo | (string) | Titulo da tarefa
 
+Quando a tarefa é do tipo ligação:
+
+Propriedade | Tipo | Descricao
+------------ | ------------- | -------------
+atendida | (boolean) | Se a ligação foi ou não atendida
+dataInicio | (datetime iso8601) | Data de início da ligação
+dataFim | (datetime iso8601) | Data de finalização da ligação
+contatoQuemAtendeu | (object)[contato] | Contato de quem atendeu a ligação
+classificacao | (integer) | Classificação da ligação: de 1 a 5
+justificativa | (string) | Quando não atendida, pode-se colocar uma justificativa a parte
+tipoLigacao | (object) | Tipo da ligação (cadastrada no nectar)
+resultadoLigacao | (string) | A descrição da ligação feita pelo responsável da tarefa
+
+
 Exemplo
 ```js
     {
