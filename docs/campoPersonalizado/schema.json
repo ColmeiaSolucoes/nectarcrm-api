@@ -1,0 +1,44 @@
+/** 
+ * Schema do Objeto Origem
+ */
+{
+	"type": "object",
+	"properties": {
+		"ativo": {
+			"type": "boolean"
+		},
+		"alias": {
+			"type": "string"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"mostrarFiltro": {
+			"type": "boolean"
+		},
+		"nome": {
+			"type": "string"
+		},
+		"obrigatorio": {
+			"type": "boolean"
+		},
+		"opcoes": {
+			"type": "object"
+		},
+		"secao": {
+			"type": "object"
+		},
+		"sequencia": {
+			"type": "int"
+		},
+		"relacionado": {
+			"type": "string"
+		},
+		"tipo": {
+			"type": "int"
+		}
+	},
+	"required": [
+		"nome"
+	]
+}

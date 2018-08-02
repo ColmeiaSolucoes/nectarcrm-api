@@ -144,6 +144,7 @@ Principais:
 - [/pipelines](./docs/pipeline)
 
 Tabelas administrativas
+- [/campoPersonalizado](./docs/campoPersonalizado)
 - [/produto](./docs/produto)
 - [/produtoCategoria](./docs/produtoCategoria)
 - [/produtoSubCategoria](./docs/produtoSubCategoria)
