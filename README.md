@@ -157,7 +157,7 @@ Tabelas administrativas
 - [/usuario](./docs/usuario)
 - [/webhook](./docs/webhook)
 
-## Geral
+## Outros
 Com o tempo vamos documentando todos endpoints, mas ainda existem alguns que podem não terem sidos documentados.
 Para não ficar sem informação, criamos um endpoint que lista todos objetos e campos possíveis da API:
 - [https://app.nectarcrm.com.br/crm/api/1/app/columns/full](https://app.nectarcrm.com.br/crm/api/1/app/columns/full)
