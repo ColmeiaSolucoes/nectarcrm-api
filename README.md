@@ -153,7 +153,7 @@ Tabelas administrativas
 - [/origem](./docs/origem)
 - [/segmento](./docs/segmento)
 - [/categoria](./docs/categoria)
-- [/tipos](./docs/tipos) (tipos de cadastros administrativos)
+- [/*/tipos](./docs/tipos) (tipos de cadastros administrativos /secao/tipos)
 - [/usuario](./docs/usuario)
 - [/webhook](./docs/webhook)
 

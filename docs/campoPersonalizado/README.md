@@ -21,7 +21,7 @@ ativo | (boolean) | Marca se esse campo está ou não ativo
 alias | (string) | Identificador único baseado no nome
 id | (long) | Identificador no sistema
 mostrarFiltro | (boolean) | Marca se esse campo aparece no filtro das listagens do nectar  
-nome | (string) | Nome da origem
+nome | (string) | Nome do campo personalizado
 obrigatorio | (string) | Marca se o campo é ou não obrigatório o preenchimento
 opcoes | (array)(string) | Opções em lista dos campos quando utilizando campo multi-valorado  
 secao | (string) | Seção agrupadora do campo que ele está vinculado  
