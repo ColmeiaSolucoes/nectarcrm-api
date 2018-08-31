@@ -1,13 +1,9 @@
 /** 
- * Schema do Objeto Contato
+ * Schema do Objeto Formulario
  */
 {
 	"type": "object",
 	"properties": {
-		"ativo": {
-			"id": "ativo",
-			"type": "boolean"
-		},
 		"autor": {
 			"id": "autor",
 			"type": "object",
@@ -38,31 +34,16 @@
 				}
 			}
 		},
-		"camposPersonalizados": {
+		"respostas": {
 			"type": "object",
 			"properties": {
 				"type": "string, string",
 				"description": "label, valor"
 			}
 		},
-		"categoria": {
-			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
-		},
-		"cnpj": {
-			"type": "string"
-		},
-		"constante": {
-			"type": "integer",
-			"description": "0 = CLIENTE, 1 = PROSPECT, 2 = SUSPECT, 3 = LEAD, 4 = CONTATO_RELACIONADO, 5 = DESCARTADO"
-		},
-		"contatos": {
-			"type": "array(contato)",
-			"description":"Array de objetos do tipo contato (com mesmas propriedades desse schema Contato)"
-		},
-		"contaPai": {
-			"type": "object(contato)",
-			"description":"Conta pai que o contato se relaciona (diferente de empresaAtual)"
+		"modeloFormulario": {
+			"type": "object(modeloFormulario)",
+			"description":"Modelo template do formulario"
 		},
 		"dataAtualizacao": {
 			"type": "datetime",
@@ -72,122 +53,13 @@
 			"type": "datetime",
 			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		},
-
-		"empresaAtual": {
-			"type": "object(contato)",
-			"description":"Empresa atual em que o contato está vinculado"
-		},
-		"enderecos": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"bairro": "string",
-					"cep": "string",
-					"complemento": "string",
-					"estado": "string",
-					"logradouro": "string",
-					"municipio": "string",
-					"numero": "string",
-					"pais": "string",
-					"principal": "boolean",
-					"tipo": "integer" //RESIDENCIAL = 0 / CORRESPONDENCIA = 1 / COMERCIAL_MATRIZ = 2 / COMERCIAL_FILIAL = 3 / COMERCIAL_RURAL = 4 / COMERCIAL_RURAL = 5
-				}
-			}
-		},
-		"emails": {
-			"type": "array",
-			"items": {
-				"type": "string"
-			}
-		},
-		"facebook": {
-			"type": "string"
-		},
-		"id": {
-			"type": "integer"
-		},
-		"indicadoPor": {
-			"type": "string"
-		},
-		"isEmpresa": {
-			"type": "boolean"
-		},
-		"linkedin": {
-			"type": "string"
-		},
-		"lista": {
-			"type": "string"
-		},
-		"nome": {
-			"type": "string"
-		},
-		"observacao": {
-			"type": "string"
-		},
-		"origem": {
-			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
-		},
-		"razaoSocial": {
-			"type": "string"
-		},
-		"receitaAnual": {
-			"type": "currency"
-		},
-		"responsavel": {
-			"type": "object",
-			"properties": {
-				"id": {
-					"type": "integer"
-				},
-				"login": {
-					"type": "string"
-				},
-				"nome": {
-					"type": "string"
-				}
-			}
-		},
-		"segmento": {
-			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
-		},
-		"sigiloso": {
-			"type": "boolean",
-			"description": "Esconde ele dos demais usuários"
-		},
-		"site": {
-			"type": "string"
-		},
-		"skype": {
-			"type": "string"
-		},
-		"telefones": {
-			"type": "array",
-			"items": {
-				"type": "string"
-			}
-		},
-		"twitter": {
-			"type": "string"
-		},
-		"tarefas": {
-			"type": "int",
-			"description": "Quantidade total de tarefas pendentes"
-		},
-		"compromissos": {
-			"type": "int",
-			"description": "Quantidade total de compromissos pendentes"
-		},
-		"oportunidades": {
-			"type": "int",
-			"description": "Quantidade total de oportunidades pendentes"
+		"dataPreenchimento": {
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
 		}
 	},
 	"required": [
-		"ativo",
-		"constante",
-		"nome"
+		"modeloFormulario",
+		"respostas"
 	]
 }

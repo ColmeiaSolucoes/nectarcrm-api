@@ -18,6 +18,8 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Procura por telefone: GET /contatos/telefone/{6299999999*} (use * para busca por like)
     Procura por CNPJ: GET /contatos/cnpj/{cnpj}
     Procura por CPF: GET /contatos/cpf/{cpf}
+    Estatísticas por contato: GET /contatos/statistics/{contatoId}
+    Próxima atividade: /contatos/{contatoId}/proximaAtividade
     
 Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)

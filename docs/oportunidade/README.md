@@ -7,7 +7,7 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/oportunidades/
 
-### Endpoints disponíveis
+### Outros endpoints disponíveis
     Listagem: GET /oportunidades/
 
     Inserção: POST /oportunidades/
@@ -17,6 +17,10 @@ http://app.nectarcrm.com.br/crm/api/1/oportunidades/
     Procura por e-mail: GET /oportunidades/email/{email@dominio.*} (use * para busca por like)
     Procura por telefone: GET /oportunidades/telefone/{6299999999*} (use * para busca por like)
     Procura por ID contato: GET /oportunidades/contatoId/{contatoId}
+    Estatísticas por oportunidade: GET /oportunidades/statistics/{oportunidadeId}
+    Estatísticas por funil e etapa: GET /oportunidades/statistics/pipe/{pipelineId}
+    Estatísticas total por funil: GET /oportunidades/statistics/total/{pipelineId}
+    Próxima atividade: /oportunidades/{oportunidadeId}/proximaAtividade
     
 Parâmetros de listagem:
 * Páginação: 
