@@ -1,4 +1,4 @@
-# Oportunidade Resource
+# Qualificação Resource
 
 Esta API permite o controle total das qualificação. Veja as instruções de como realizar a integração abaixo.
 
