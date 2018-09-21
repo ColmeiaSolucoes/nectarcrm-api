@@ -93,6 +93,10 @@ curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b9
 
         Algum parâmetro enviado errado
 
++ 403 (text/json)
+
+        Acesso negado
+
 + 404 (text/json)
 
         Registro não encontrado
