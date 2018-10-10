@@ -34,7 +34,7 @@ Parâmetros de listagem:
 + &dataInicioLimite (optional, date) - Data limite inicial (dd/MM/yyyy)
 + &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
 + &nome (optional, string) - Nome ou código da qualificação
-+ &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 4 = contatos relacionados, 5 = descartados)
++ &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
 + &usuariosId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
 + &camposPersonalizados (optional, json) - filtro de campos personalizados
 + &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.

@@ -25,7 +25,7 @@ Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 + &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
 + &nome (optional, string) - Nome ou código do contato
-+ &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 4 = contatos relacionados, 5 = descartados
++ &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 5 = descartados
 + &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)
 + &dataFim (optional, date) - Data de criação final (dd/MM/yyyy)
 + &dataInicioAtualizacao (optional, date) - Data atualização inicial (dd/MM/yyyy)
@@ -58,7 +58,7 @@ camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} 
 categoria | (string) | Categoria do contato (se não tiver, será criado)
 cnpj | (string) | CNPJ do contato
 cpf | (string) | CPF do contato
-constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 4 = Contatos relacionados, 5 = Descartados)
+constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 5 = Descartados)
 contatos | (array)(contato) | Contatos relacionados (pessoas)
 contaPai | (object)["contato"] | Conta pai que esse contato se relaciona (diferente de empresaAtual) 
 dataAtualizacao | (datetime) | Última data de atualização
