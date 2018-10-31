@@ -1,5 +1,5 @@
 /** 
- * Schema do Objeto Lista
+ * Schema do Objeto Oportunidade
  */
 {
 	"type": "object",
@@ -35,6 +35,15 @@
 		},
 		"cliente": {
 			"id": "cliente",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				}
+			}
+		},
+		"contato": {
+			"id": "contato",
 			"type": "object",
 			"properties": {
 				"id": {
@@ -95,6 +104,19 @@
 		},
 		"pipeline": {
 			"type": "string"
+		},
+		"funilVenda": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"id": "id",
+					"type": "integer"
+				},
+				"nome": {
+					"id": "nome",
+					"type": "string"
+				}
+			}
 		},
 		"probabilidade": {
 			"type": "integer"
@@ -159,7 +181,7 @@
 		"status": {
 			"id": "status",
 			"type": "integer",
-			"description": "1 = EM ANDAMENTO, 2 = GANHO, 3 = PERDIDO, 4 = CANCELADO"
+			"description": "1 = EM ANDAMENTO, 2 = GANHA, 3 = PERDIDA, 4 = CANCELADA, 5 = PRORROGADA"
 		},
 		"valorAvulso": {
 			"type": "float"

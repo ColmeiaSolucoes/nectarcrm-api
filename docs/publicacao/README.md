@@ -8,6 +8,14 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/publicacao/
 
+### Endpoints disponíveis
+    Listagem: GET /publicacao/
+    Inserção: POST /publicacao/
+    Visualização: GET /publicacao/{id}
+    Incluir comentário: POST /publicacao/{publicacaoId}/comentario 
+        BODY { "autor": { "nome": "Teste" }, "descricao": "Teste" }
+    Listas comentários: GET /publicacao/{publicacaoId}/comentarios
+
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 

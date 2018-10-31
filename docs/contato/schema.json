@@ -1,5 +1,5 @@
 /** 
- * Schema do Objeto Contato
+ * Schema Contato
  */
 {
 	"type": "object",
@@ -47,44 +47,24 @@
 		},
 		"categoria": {
 			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
+			"description" : "Se nao existir, criaremos um novo objeto com esse nome."
 		},
 		"cnpj": {
 			"type": "string"
 		},
 		"constante": {
 			"type": "integer",
-			"description": "0 = CLIENTE, 1 = PROSPECT, 2 = SUSPECT, 3 = LEAD, 4 = CONTATO_RELACIONADO, 5 = DESCARTADO"
+			"description": "0 = CLIENTE, 1 = PROSPECT, 2 = SUSPECT, 3 = LEAD, 5 = DESCARTADO",
 		},
 		"contatos": {
 			"type": "array(contato)",
 			"description":"Array de objetos do tipo contato (com mesmas propriedades desse schema Contato)"
 		},
 		"dataAtualizacao": {
-			"type": "datetime",
-			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
+			"type": "timestamp"
 		},
 		"dataCriacao": {
-			"type": "datetime",
-			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
-		},
-		"enderecos": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"bairro": "string",
-					"cep": "string",
-					"complemento": "string",
-					"estado": "string",
-					"logradouro": "string",
-					"municipio": "string",
-					"numero": "string",
-					"pais": "string",
-					"principal": "boolean",
-					"tipo": "integer" //RESIDENCIAL = 0 / CORRESPONDENCIA = 1 / COMERCIAL_MATRIZ = 2 / COMERCIAL_FILIAL = 3 / COMERCIAL_RURAL = 4 / COMERCIAL_RURAL = 5
-				}
-			}
+			"type": "auto"
 		},
 		"emails": {
 			"type": "array",
@@ -101,13 +81,7 @@
 		"indicadoPor": {
 			"type": "string"
 		},
-		"isEmpresa": {
-			"type": "boolean"
-		},
 		"linkedin": {
-			"type": "string"
-		},
-		"lista": {
 			"type": "string"
 		},
 		"nome": {
@@ -118,7 +92,7 @@
 		},
 		"origem": {
 			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
+			"description" : "Se nao existir, criaremos um novo objeto com esse nome."
 		},
 		"razaoSocial": {
 			"type": "string"
@@ -142,11 +116,11 @@
 		},
 		"segmento": {
 			"type": "string",
-			"description" : "Se não existir, criaremos um novo objeto com esse nome."
+			"description" : "Se nao existir, criaremos um novo objeto com esse nome."
 		},
 		"sigiloso": {
 			"type": "boolean",
-			"description": "Esconde ele dos demais usuários"
+			"description": "Esconde ele dos demais usuarios"
 		},
 		"site": {
 			"type": "string"
@@ -162,18 +136,6 @@
 		},
 		"twitter": {
 			"type": "string"
-		},
-		"tarefas": {
-			"type": "int",
-			"description": "Quantidade total de tarefas pendentes"
-		},
-		"compromissos": {
-			"type": "int",
-			"description": "Quantidade total de compromissos pendentes"
-		},
-		"oportunidades": {
-			"type": "int",
-			"description": "Quantidade total de oportunidades pendentes"
 		}
 	},
 	"required": [

@@ -93,6 +93,10 @@ curl http://app.nectarcrm.com.br/crm/api/1/contatos/?api_token=c5520d027fd1475b9
 
         Algum parâmetro enviado errado
 
++ 403 (text/json)
+
+        Acesso negado
+
 + 404 (text/json)
 
         Registro não encontrado
@@ -137,11 +141,14 @@ Principais:
 
 - [/contatos](./docs/contato)
 - [/oportunidades](./docs/oportunidade)
+- [/qualificacoes](./docs/qualificacao)
 - [/compromissos](./docs/compromisso)
 - [/tarefas](./docs/tarefa)
 - [/publicacao](./docs/publicacao)
+- [/pipelines](./docs/pipeline)
 
 Tabelas administrativas
+- [/campoPersonalizado](./docs/campoPersonalizado)
 - [/produto](./docs/produto)
 - [/produtoCategoria](./docs/produtoCategoria)
 - [/produtoSubCategoria](./docs/produtoSubCategoria)
@@ -150,11 +157,14 @@ Tabelas administrativas
 - [/origem](./docs/origem)
 - [/segmento](./docs/segmento)
 - [/categoria](./docs/categoria)
-- [/tipos](./docs/tipos) (tipos de cadastros administrativos)
+- [/*/tipos](./docs/tipos) (tipos de cadastros administrativos /secao/tipos)
 - [/usuario](./docs/usuario)
 - [/webhook](./docs/webhook)
 
-    
+## Outros
+Com o tempo vamos documentando todos endpoints, mas ainda existem alguns que podem não terem sidos documentados.
+Para não ficar sem informação, criamos um endpoint que lista todos objetos e campos possíveis da API:
+- [https://app.nectarcrm.com.br/crm/api/1/app/columns/full](https://app.nectarcrm.com.br/crm/api/1/app/columns/full)
 
 ### Header
 A requisição deve conter:

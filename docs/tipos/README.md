@@ -22,8 +22,8 @@ Schema Info | [Schema JSON](schema.json)
 
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
-ativo | (boolean) | Marca se essa origem está ativa para utilização
-descricao | (string) | Descrição da origem
+ativo | (boolean) | Marca se esse tipo está ativa para utilização
+descricao | (string) | Descrição do tipo
 id | (long) | Identificador no sistema
 nome | (string) | Nome da origem
 

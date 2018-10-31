@@ -64,3 +64,20 @@ Exemplo
       }
     ]
 ```
+
+# Endpoint para adicionar / remover produto da tabela de preço
+
+URL
+Method: PUT
+http://app.nectarcrm.com.br/crm/api/1/tabelaPreco/{id_tabela_preco}/add
+
+```json
+  {
+    "produto": {
+      "id": 1
+    },
+    "valorBase": 1000.00
+  }
+```
+
+http://app.nectarcrm.com.br/crm/api/1/tabelaPreco/{id_tabela_preco}/rem/{id_produto)

@@ -7,7 +7,7 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/oportunidades/
 
-### Endpoints disponíveis
+### Outros endpoints disponíveis
     Listagem: GET /oportunidades/
 
     Inserção: POST /oportunidades/
@@ -17,6 +17,10 @@ http://app.nectarcrm.com.br/crm/api/1/oportunidades/
     Procura por e-mail: GET /oportunidades/email/{email@dominio.*} (use * para busca por like)
     Procura por telefone: GET /oportunidades/telefone/{6299999999*} (use * para busca por like)
     Procura por ID contato: GET /oportunidades/contatoId/{contatoId}
+    Estatísticas por oportunidade: GET /oportunidades/statistics/{oportunidadeId}
+    Estatísticas por funil e etapa: GET /oportunidades/statistics/pipe/{pipelineId}
+    Estatísticas total por funil: GET /oportunidades/statistics/total/{pipelineId}
+    Próxima atividade: /oportunidades/{oportunidadeId}/proximaAtividade
     
 Parâmetros de listagem:
 * Páginação: 
@@ -31,7 +35,7 @@ Parâmetros de listagem:
 + &dataInicioLimite (optional, date) - Data limite inicial (dd/MM/yyyy)
 + &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
 + &nome (optional, string) - Nome ou código da oportunidade
-+ &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 4 = contatos relacionados, 5 = descartados)
++ &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
 + &categoriasId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/categoria](../categoria) de contato
 + &produtosIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/produto](../produto)
 + &categoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Categoria de Produto
@@ -61,6 +65,7 @@ autor | (object) | Autor da oportunidade
 autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
+contato | (object) | Pessoa (contato) relacionado a venda
 codigo | (string)(auto) | Código da oportunidade
 dataAtualizacao | (datetime iso8601) | Última data de atualização
 dataCriacao | (datetime iso8601) | Data de criação dessa oportunidade
@@ -72,11 +77,12 @@ justificativas | (array)(object) | Justificativas de conclusão de oportunidade
 nome | (string) | Nome do contato
 observacao | (string) | Observação da oportunidade
 origem | (object) | Origem da oportunidade
-pipeline | (object) | Fluxo de venda / Pipeline
+pipeline | (string) | Funil de venda / Pipeline em string (apenas "nome")
+funilVenda | (object) | Funil de venda / Pipeline em objeto (com nome e id)
 probabilidade | (int) | Probabilidade de fechamento (10, 25, 50, 75, 90 ou 100)
 produtos | (array)(object) | Itens e produtos
 responsavel | (object) | Quem será responsável por essa oportunidade
-status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganho, 3 = Perdido, 4 = Cancelado)
+status | (integer) | Status da oportunidade (1 = Em andamento, 2 = Ganha, 3 = Perdida, 4 = Cancelada, 5 = Prorrogada)
 temperatura | (string)* | Temperatura da oportunidade medida pela probabilidade de fechamento da oportunidade (Frio: < 25 / Morno: >= 25 e < 50 / Quente: >=50 e < 75 / Muito Quente: >= 75)
 valorAvulso | (float) | Valor da venda avulsa
 valorMensal | (float) | Valor da venda recorrente (mensal)
@@ -97,6 +103,10 @@ Exemplo
         "cliente": {
           "id": 141960,
           "nome": "Cliente 1"
+        },
+        "contato": {
+          "id": 141961,
+          "nome": "Pessoa do cliente 1"
         },
         "justificativas": [
             { 

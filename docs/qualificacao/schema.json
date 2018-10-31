@@ -1,0 +1,113 @@
+/** 
+ * Schema do Objeto Qualificacao
+ */
+{
+	"type": "object",
+	"properties": {
+		"autor": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"autorAtualizacao": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				}
+			}
+		},
+		"camposPersonalizados": {
+			"type": "object",
+			"properties": {
+				"type": "string, string",
+				"description": "label, valor"
+			}
+		},
+		"cliente": {
+			"id": "cliente",
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "long"
+				}
+			}
+		},
+		"codigo": {
+			"type": "string"
+		},
+		"dataAtualizacao": {
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
+		},
+		"dataCriacao": {
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
+		},
+		"dataLimite": {
+			"type": "datetime",
+			"description": "ISO 8601 Date format : 2016-03-30T12:00:00-03:00"
+		},
+		"etapa": {
+			"type": "integer"
+		},
+		"id": {
+			"type": "integer"
+		},
+		"pipeline": {
+			"type": "string"
+		},
+		"funilVenda": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"id": "id",
+					"type": "integer"
+				},
+				"nome": {
+					"id": "nome",
+					"type": "string"
+				}
+			}
+		},
+		"responsavel": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"id": "id",
+					"type": "integer"
+				},
+				"nome": {
+					"id": "nome",
+					"type": "string"
+				}
+			}
+		},
+		"status": {
+			"id": "status",
+			"type": "integer",
+			"description": "1 = Em andamento, 2 = Agendada, 3 = Qualificada, 4 = Descartada, 5 = Vendida, 6 = Não vendida"
+		},
+		"tarefas": {
+			"type": "int",
+			"description": "Quantidade total de tarefas pendentes"
+		},
+		"compromissos": {
+			"type": "int",
+			"description": "Quantidade total de compromissos pendentes"
+		}
+	},
+	"required": [
+		"nome",
+		"cliente"
+	]
+}

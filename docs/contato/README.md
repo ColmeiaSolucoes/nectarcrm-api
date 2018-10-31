@@ -18,12 +18,14 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Procura por telefone: GET /contatos/telefone/{6299999999*} (use * para busca por like)
     Procura por CNPJ: GET /contatos/cnpj/{cnpj}
     Procura por CPF: GET /contatos/cpf/{cpf}
+    Estatísticas por contato: GET /contatos/statistics/{contatoId}
+    Próxima atividade: /contatos/{contatoId}/proximaAtividade
     
 Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 + &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
 + &nome (optional, string) - Nome ou código do contato
-+ &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 4 = contatos relacionados, 5 = descartados
++ &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 5 = descartados
 + &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)
 + &dataFim (optional, date) - Data de criação final (dd/MM/yyyy)
 + &dataInicioAtualizacao (optional, date) - Data atualização inicial (dd/MM/yyyy)
@@ -56,16 +58,18 @@ camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} 
 categoria | (string) | Categoria do contato (se não tiver, será criado)
 cnpj | (string) | CNPJ do contato
 cpf | (string) | CPF do contato
-constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 4 = Contatos relacionados, 5 = Descartados)
+constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 5 = Descartados)
 contatos | (array)(contato) | Contatos relacionados (pessoas)
+contaPai | (object)["contato"] | Conta pai que esse contato se relaciona (diferente de empresaAtual) 
 dataAtualizacao | (datetime) | Última data de atualização
 dataCriacao | (datetime) | Data de criação desse contato
 emails | (array)["string"] | E-mails do contato
+empresa | (boolean) | Campo que diz se é ou não empresa (PJ ou PF)
+empresaAtual | (object)["contato"] | Empresa atual em que o contato está vinculado
 enderecos | (array)["object"] | Endereços do contato
 facebook | (string) | Facebook do contato
 id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
-isEmpresa | (string) | Campo que diz se é ou não empresa (PJ ou PF)
 linkedin | (string) | Linkedin
 lista | (string) | Lista relacionada do contato
 nome | (string) | Nome do contato
