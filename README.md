@@ -160,6 +160,7 @@ Tabelas administrativas
 - [/*/tipos](./docs/tipos) (tipos de cadastros administrativos /secao/tipos)
 - [/usuario](./docs/usuario)
 - [/webhook](./docs/webhook)
+- [/equipe](./docs/equipe)
 
 ## Outros
 Com o tempo vamos documentando todos endpoints, mas ainda existem alguns que podem não terem sidos documentados.
