@@ -72,6 +72,7 @@ id | (long) | Identificador do contato no sistema
 indicadoPor | (string) | Campo de indicação
 linkedin | (string) | Linkedin
 lista | (string) | Lista relacionada do contato
+listas | (array)["string"] | Listas relacionadas do contato
 nome | (string) | Nome do contato
 observacao | (string) | Observação do contato
 origem | (string) | Origem do contato (se não tiver, será criado)
@@ -137,6 +138,7 @@ Exemplo
         "isJuridico": true,
         "linkedin": "linkedin1",
         "lista": "Lista 1",
+        "listas": ["Lista 1", "Lista 2", "Lista 3"],
         "nome": "Empresa 1",
         "observacao": "Observação qualquer",
         "origem": "Telefone",
