@@ -26,13 +26,6 @@
 				}
 			}
 		},
-		"camposPersonalizados": {
-			"type": "object",
-			"properties": {
-				"type": "string, string",
-				"description": "label, valor"
-			}
-		},
 		"cliente": {
 			"id": "cliente",
 			"type": "object",

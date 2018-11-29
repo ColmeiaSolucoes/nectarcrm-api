@@ -36,7 +36,6 @@ Parâmetros de listagem:
 + &nome (optional, string) - Nome ou código da qualificação
 + &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
 + &usuariosId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
-+ &camposPersonalizados (optional, json) - filtro de campos personalizados
 + &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.
 
 
@@ -54,7 +53,6 @@ Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
 autor | (object) | Autor da qualificação
 autorAtualizacao | (object) | Quem fez a última atualização
-camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
 codigo | (string)(auto) | Código da qualificação
 compromisso | (object) | O agendamento realizado para a qualificação
@@ -88,10 +86,6 @@ Exemplo
           "login": "contato1@teste.com.br",  //se nao tiver id, procura por esse
           "nome": "Usuario 1"  //se nao tiver id, procura por esse
         },
-        "status": 1, //Em andamento
-        "camposPersonalizados": {
-            "Campo 1": "Valor 1",
-            "Campo 2": "Valor 2"
-        }
+        "status": 1 //Em andamento
     }
 ```
