@@ -66,7 +66,7 @@ Exemplo
           "nome": "Usuario 1"
         },
         "status": 0, //aberta
-        "tipo": "Reunião",
+        "tipo": 0, //comum
         "titulo": "Teste de tarefa"
       }
 ```
