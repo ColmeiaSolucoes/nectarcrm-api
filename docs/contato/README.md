@@ -138,7 +138,14 @@ Exemplo
         "isJuridico": true,
         "linkedin": "linkedin1",
         "lista": "Lista 1",
-        "listas": ["Lista 1", "Lista 2", "Lista 3"],
+        "listas": [
+            { 
+                "nome": "Lista 1"
+            }, 
+            { 
+                "nome": "Lista 2"
+            }
+        ],
         "nome": "Empresa 1",
         "observacao": "Observação qualquer",
         "origem": "Telefone",
