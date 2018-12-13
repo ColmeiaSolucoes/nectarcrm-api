@@ -27,7 +27,7 @@
 		"comissao": {
 			"type": "float"
 		},
-		"comissaoPorcentual": {
+		"isComissaoPorcentual": {
 			"type": "boolean"
 		},
 		"contador": {
@@ -36,7 +36,7 @@
 		"descontoMaximo": {
 			"type": "float"
 		},
-		"descontoPorcentual": {
+		"isDescontoPorcentual": {
 			"type": "boolean"
 		},
 		"id": {
