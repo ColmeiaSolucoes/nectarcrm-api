@@ -127,7 +127,7 @@
 				"id": {
 					"type": "integer"
 				},
-				"comissaoPorcentual": {
+				"isComissaoPorcentual": {
 					"type": "boolean",
 					"default": false
 				},
@@ -135,7 +135,7 @@
 					"type": "float",
 					"default": 0
 				},
-				"descontoPorcentual": {
+				"isDescontoPorcentual": {
 					"type": "boolean",
 					"default": false
 				},

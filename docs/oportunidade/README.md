@@ -120,9 +120,9 @@ Exemplo
 	    "dataLimite":"2016-03-11T10:00:00-03:00",
         "produtos": [
             {
-                "comissaoPorcentual": false,
+                "isComissaoPorcentual": false,
                 "desconto": 0,
-                "descontoPorcentual": false,
+                "isDescontoPorcentual": false,
                 "refId": 8435, //ID do produto cadastrado
                 "nome": "Produto 1", //aqui serve o nome ou o código editado na tabela do produto
                 "quantidade": 6, //quantidade de produtos
