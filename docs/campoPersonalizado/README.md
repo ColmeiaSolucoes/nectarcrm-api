@@ -50,3 +50,51 @@ Exemplo
     }
     ]
 ```
+
+## Métodos adicionais
+
+#### /customField/fields/{objectType}
+
+Retorna os campos escolhidos no sistema para a montagem de tela
+
+* ObjectType { 
+    1: Contatos,
+    2: Oportunidades
+}
+
+Schema Info
+
+Propriedade | Tipo | Descricao
+------------ | ------------- | -------------
+alias | (string) | Identificador único baseado no label
+campoPersonalizado | (object[campoPersonalizado]) | Campo personalizado referenciado
+id | (long) | Identificador no sistema
+label | (string) | Identificador do campo em texto
+fieldType | (string) | personalized = Campo personalizado, "default" = Campo do sistema padrão
+obrigatorio | (boolean) | Marca se esse campo é ou não obrigatório
+property | (int) | Tipo do campo personalizado (0 = Número, 1 = Texto, 2 = Data, 3 = Moeda, 4 = Booleano, 5 = Lista de opções, 6 = Texto, 7 = Radio, 8 = URL, 9 = Contato, 10 = CNAE, 11 = Checkbox)
+removable | (bool) | Se o campo pode ou não ser removido da visão
+valor | (string) | Conteúdo demonstrativo do campo (caso visto com um contato/oportunidade)
+
+```js
+
+    {
+        "campoPersonalizado": {
+            "tipo": 1,
+            "obrigatorio": false,
+            "hidden": false,
+            "alias": "1.3.1.2-cnpj_informado",
+            "campoPersonalizadoPai": null,
+            "id": 29691,
+            "label": "1.3.1.2-CNPJ Informado"
+        },
+        "obrigatorio": false,
+        "removable": true,
+        "property": 1,
+        "valor": null,
+        "alias": "1.3.1.2-cnpj_informado",
+        "label": "1.3.1.2-CNPJ Informado",
+        "id": 29691,
+        "fieldType": "personalized"
+    }
+```
