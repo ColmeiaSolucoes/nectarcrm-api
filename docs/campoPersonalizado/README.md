@@ -66,35 +66,35 @@ Schema Info
 
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
-alias | (string) | Identificador único baseado no label
-campoPersonalizado | (object[campoPersonalizado]) | Campo personalizado referenciado
-id | (long) | Identificador no sistema
 label | (string) | Identificador do campo em texto
+name | (string) | Label do campo
+checked | (boolean) | Marcado se está sendo mostrado na visão
+fieldPropertyName | (string) | Identificador do campo em objeto
+fieldSubPropertyName | (string) | Identificador da subpropriedade do campo em objeto
 fieldType | (string) | personalized = Campo personalizado, "default" = Campo do sistema padrão
-obrigatorio | (boolean) | Marca se esse campo é ou não obrigatório
-property | (int) | Tipo do campo personalizado (0 = Número, 1 = Texto, 2 = Data, 3 = Moeda, 4 = Booleano, 5 = Lista de opções, 6 = Texto, 7 = Radio, 8 = URL, 9 = Contato, 10 = CNAE, 11 = Checkbox)
+icon | (string) | Ícone do campo (se aplicável)
+msgkey | (string) | Identificador de tradução do campo
+obrigatory | (boolean) | Marca se esse campo é ou não obrigatório
+description | (string) | Descrição do campo personalizado
+type | (string) | Tipo do valor retornado ("string", "integer", "object[Origem]"...)
+readOnly | (bool) | Se o campo pode ou não ser editado
 removable | (bool) | Se o campo pode ou não ser removido da visão
 valor | (string) | Conteúdo demonstrativo do campo (caso visto com um contato/oportunidade)
-
 ```js
-
     {
-        "campoPersonalizado": {
-            "tipo": 1,
-            "obrigatorio": false,
-            "hidden": false,
-            "alias": "1.3.1.2-cnpj_informado",
-            "campoPersonalizadoPai": null,
-            "id": 29691,
-            "label": "1.3.1.2-CNPJ Informado"
-        },
-        "obrigatorio": false,
+        "icon": "",
+        "valor": "Campanha de Jornal",
+        "description": "Origem da oportunidade",
+        "obrigatory": false,
+        "readOnly": false,
+        "label": "Origem",
+        "type": "object[Origem]",
+        "fieldPropertyName": "origem",
         "removable": true,
-        "property": 1,
-        "valor": null,
-        "alias": "1.3.1.2-cnpj_informado",
-        "label": "1.3.1.2-CNPJ Informado",
-        "id": 29691,
-        "fieldType": "personalized"
+        "name": "origem",
+        "checked": true,
+        "msgkey": "crm.oportunidade.origem",
+        "fieldSubPropertyName": "nome",
+        "fieldType": "default"
     }
 ```
