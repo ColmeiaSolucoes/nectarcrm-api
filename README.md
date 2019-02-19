@@ -161,6 +161,7 @@ Tabelas administrativas
 - [/usuario](./docs/usuario)
 - [/webhook](./docs/webhook)
 - [/equipe](./docs/equipe)
+- [/proposta](./docs/proposta)
 
 ## Outros
 Com o tempo vamos documentando todos endpoints, mas ainda existem alguns que podem não terem sidos documentados.
