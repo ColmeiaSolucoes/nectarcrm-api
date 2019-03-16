@@ -20,20 +20,20 @@ http://app.nectarcrm.com.br/crm/api/1/proposta/opportunity/{id_oportunidade}
 
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
+autor | (object|entidade) | Dados do autor da proposta
 id | (long) | Identificador no sistema
-status | (integer) | Código do status da proposta
-versao | (integer) | Versão da proposta na oportunidade
-numero | (integer) | Número identificador da proposta
 codigo | (string) | Código da proposta gerada
-publicUrl | (string) | Url pública para download da proposta
+codigoFormatado | (string) | Código da proposta formatado
+dataCriacao | (date) | Data de criação da proposta
 dataProposta | (date) | Data de geração da proposta
+destinatario | (string) | Destinatário da proposta
+numero | (integer) | Número identificador da proposta
 modeloProposta | (object) | Dados do modelo de proposta utilizado
 oportunidade | (object) | Dados da oportunidade da proposta
-autor | (object|entidade) | Dados do autor da proposta
-dataCriacao | (date) | Data de criação da proposta
-destinatario | (string) | Destinatário da proposta
-codigoFormatado | (string) | Código da proposta formatado
+publicUrl | (string) | Url pública para download da proposta
+status | (integer) | Código do status da proposta (0 = Rascunho, 1 = Em aprovação, 2 = Aprovada, 3 = Reprovada, 4 = Obsoleta)
 statusLabel | (string) | Label do status da proposta
+versao | (integer) | Versão da proposta na oportunidade
 
 Exemplo
 ```js
