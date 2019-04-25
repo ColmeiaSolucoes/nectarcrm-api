@@ -35,6 +35,7 @@ Parâmetros de listagem:
 + &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
 + &nome (optional, string) - Nome ou código da qualificação
 + &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
++ &clienteId (optional, int) - id de um [/contato](../contato) contato
 + &usuariosId (optional, array) - X,Y,Z... (array integer) onde X,Y e Z são ids do objeto [/usuario](../usuario)
 + &useAlias (optional, string) - ao filtrar campos personalizados, utiliza o "alias" do campo personalizado ao invés do nome do campo.
 

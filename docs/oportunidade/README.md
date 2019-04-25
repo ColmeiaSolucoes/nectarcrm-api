@@ -36,6 +36,7 @@ Parâmetros de listagem:
 + &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
 + &nome (optional, string) - Nome ou código da oportunidade
 + &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
++ &clienteId (optional, int) - id de um [/contato](../contato) contato
 + &categoriasId (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/categoria](../categoria) de contato
 + &produtosIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto [/produto](../produto)
 + &categoriasProdutoIds (optional, array[int]) - X,Y,Z... onde X,Y e Z são ids do objeto Categoria de Produto
