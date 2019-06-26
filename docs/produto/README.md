@@ -32,6 +32,7 @@ quantidadeEstoque | (integer) | Define a quantidade do estoque desse produto
 recorrencia | (integer) | Recorrência de valor do produto (0 = único, 1 = mensal, 2 = anual)
 subcategoria | (object) | SubCategoria do produto
 valorBase | (float) | Valor base do produto
+valorEditavel | (boolean) | Indica se o valor base do produto é ou não editável
 
 Exemplo
 ```js
