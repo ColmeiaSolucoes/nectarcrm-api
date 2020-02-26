@@ -23,7 +23,7 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     
 Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
-+ &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
++ &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 50)
 + &nome (optional, string) - Nome ou código do contato
 + &constante (optional, int) - 0 = cliente, 1 = prospect, 2 = suspect, 3 = lead, 5 = descartados
 + &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)

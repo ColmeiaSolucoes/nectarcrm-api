@@ -24,9 +24,9 @@ http://app.nectarcrm.com.br/crm/api/1/qualificacoes/
 Parâmetros de listagem:
 * Páginação: 
     * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
-    * &displayLength=x (integer) - Quantidade de objetos por página (máximo 200)
+    * &displayLength=x (integer) - Quantidade de objetos por página (máximo 50)
 * &status (optional, int) - Status/Fase da qualificação (integer 1 = em andamento, 2 = ganha, 3 = perdida, 4 = descartada)
-+ &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 200)
++ &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 50)
 + &dataInicio (optional, date) - Data de criação inicial (dd/MM/yyyy)
 + &dataFim (optional, date) - Data de criação final (dd/MM/yyyy)
 + &dataInicioAtualizacao (optional, date) - Data atualização inicial (dd/MM/yyyy)
