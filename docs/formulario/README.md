@@ -29,6 +29,7 @@ dataCriacao | (date) | Data da criação de formulário
 dataAtualizacao | (date) | Data da última atualização
 dataPreenchimento | (date) | Data do preenchimento
 respostas | (properties){"Pergunta 1": "resposta 1", "Pergunta 2": "resposta 2"} | Campos de respostas baseado nas perguntas do modelo de formulário
+respostasObject | (object[valorCampoPersonalizado) | Campos de respostas com propriedades da pergunta
 
 Exemplo
 ```js
@@ -57,7 +58,27 @@ Exemplo
             "respostas": {
                 "First question": "true",
                 "Second question": "value text"
-            }
+            },
+            "resposasObject": [ {
+                "campoPersonalizado" : {
+                  "id" : 31021,
+                  "nome" : "Pergunta 1",
+                  "tipo" : 0,
+                  "obrigatorio" : false,
+                  "opcoes" : [ ],
+                  "opcoesPersonalizadas" : [ ],
+                  "sequencia" : 1,
+                  "secao" : {
+                    "ativo" : true,
+                    "nome" : "First Form",
+                    "id" : 2
+                  },
+                  "mostrarFiltro" : true,
+                  "escondido" : true
+                },
+                "valor" : "787",
+                "id" : 698681
+            } ]
         }
     ]
 ```
