@@ -28,6 +28,7 @@ modeloFormulario | (object[modeloFormulario) | Vincula esse formulário a modelo
 dataCriacao | (date) | Data da criação de formulário
 dataAtualizacao | (date) | Data da última atualização
 dataPreenchimento | (date) | Data do preenchimento
+preenchido | (boolean) | Parâmetro para indicar se o formulário está preenchido
 respostas | (properties){"Pergunta 1": "resposta 1", "Pergunta 2": "resposta 2"} | Campos de respostas baseado nas perguntas do modelo de formulário
 respostasObject | (object[valorCampoPersonalizado) | Campos de respostas com propriedades da pergunta
 
@@ -39,6 +40,7 @@ Exemplo
             "dataCriacao": "2018-04-05T15:44:09-03:00",
             "dataAtualizacao": "2018-08-13T15:01:49-03:00",
             "dataPreenchimento": "2018-08-13T15:01:49-03:00",
+            "preenchido": true,
             "autor": {
                 "id": 1,
                 "login": "user1@domain.com",
@@ -76,6 +78,7 @@ Exemplo
                   "mostrarFiltro" : true,
                   "escondido" : true
                 },
+                "obrigatorioFormulario": true,
                 "valor" : "787",
                 "id" : 698681
             } ]
