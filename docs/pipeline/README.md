@@ -23,6 +23,16 @@ nome | (string) | Nome do funil
 padrao | (boolean) | Determina se esse funil é o padrão do sistema
 sequencias | (array) | Etapas do funil
 tipo | (int) | Tipo do funil (0 = vendas, 1 = qualificação)
+permitePularEtapa | (boolean) | Determina se pode pular etapas
+iniciarQualquerEtapa | (boolean) | Determina se pode iniciar em qualquer etapa
+permiteRetornoEtapa | (boolean) | Determina se pode retornar etapa
+propostaObrigatoria | (boolean) | Determina se gerar proposta é obrigatória na etapa indicada com Gerar Proposta
+produtoObrigatorio | (boolean) | Determina se as oportunidades precisam ter produtos para incluir/editar
+permitirRecorrenciaVariavel | (boolean) | Determina se pode alterar a recorrência do produto
+modeloVenda | (int) | Modelo de venda do funil (0 = B2B, 1 = B2C)
+multiplasTabelasPreco | (boolean) | Determina se poderá usar múltiplas tabelas de preço
+corresponsabilidade | (boolean) | Determina se poderá usar corresponsabilidade nas oportunidades
+ignorarRestricaoEquipes | (boolean) | Caso corresponsabilidade esteja ativo, determina se irá ignorar restrição de equipes
 
 Exemplo
 ```js
@@ -48,7 +58,17 @@ Exemplo
                         "gerarProposta": false
                     }
                     ],
-        "tipo": 0
+        "tipo": 0,
+        "permitePularEtapa": true,
+        "iniciarQualquerEtapa": true,
+        "permiteRetornoEtapa": true,
+        "propostaObrigatoria": false,
+        "produtoObrigatorio": false,
+        "permitirRecorrenciaVariavel": true,
+        "modeloVenda": 0,
+        "multiplasTabelasPreco": false,
+        "corresponsabilidade": true,
+        "ignorarRestricaoEquipes": true,
       }
     ]
 ```
