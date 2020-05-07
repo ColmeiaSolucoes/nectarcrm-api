@@ -26,7 +26,38 @@
 		"tipo": {
 			"type": "integer",
 			"description": "0 = Venda, 1 = Qualificação"
-		}
+		},
+		"permitePularEtapa": {
+			"type": "boolean"
+		},
+	    	"iniciarQualquerEtapa": {
+			"type": "boolean"
+		},
+	    	"permiteRetornoEtapa": {
+			"type": "boolean"
+		},
+	    	"propostaObrigatoria": {
+			"type": "boolean"
+		},
+	    	"produtoObrigatorio": {
+			"type": "boolean"
+		},
+	    	"permitirRecorrenciaVariavel": {
+			"type": "boolean"
+		},
+	    	"modeloVenda": {
+			"type": "integer",
+			"description": "0 = B2B, 1 = B2C"
+		},
+	    	"multiplasTabelasPreco": {
+			"type": "boolean"
+		},
+	    	"corresponsabilidade": {
+			"type": "boolean"
+		},
+	    	"ignorarRestricaoEquipes": {
+			"type": "boolean"
+		},
 	},
 	"required": [
 		"nome"
