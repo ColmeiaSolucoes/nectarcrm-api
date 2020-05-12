@@ -24,6 +24,9 @@
 		},
 		"nome": {
 			"type": "string"
+		},
+		"relacionada": {
+			"type": "integer"
 		}
 	},
 	"required": [
