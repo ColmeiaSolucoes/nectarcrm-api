@@ -33,6 +33,7 @@ recorrencia | (integer) | Recorrência de valor do produto (0 = único, 1 = mens
 subcategoria | (object) | SubCategoria do produto
 valorBase | (float) | Valor base do produto
 valorEditavel | (boolean) | Indica se o valor base do produto é ou não editável
+fracionario | (boolean) | Indica se o produto permite quantidade fracionada
 
 Exemplo
 ```js
@@ -61,7 +62,8 @@ Exemplo
           "id": 2,
           "nome": "Manutenção"
         },
-        "valorBase": 150
+        "valorBase": 150,
+        "fracionario": false
       }
   ]
 ```
