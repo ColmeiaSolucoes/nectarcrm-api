@@ -74,6 +74,9 @@
 		},
 		"valorBase": {
 			"type": "float"
+		},
+		"fracionario": {
+			"type": "boolean"
 		}
 	},
 	"required": [
