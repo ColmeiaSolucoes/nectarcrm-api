@@ -26,6 +26,7 @@ Endpoints disponíveis com seus agrupadores:
 - /indicator -- Criação;
 - /qualification -- Criação, limite, conclusão, atualização e prorrogação;
 - /qualification-with-products -- Criação, limite, conclusão, atualização e prorrogação;
+- /load-report/{reportId} -- Criação, limite, conclusão, atualização e prorrogação (disponibilidade de acordo com a tabela utilizada no relatório);
 
 
 Agrupadores disponíveis:
