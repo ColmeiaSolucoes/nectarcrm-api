@@ -57,12 +57,22 @@ Exemplo
           "nome": "Oportunidade de venda"
         },
         "participantes": [
-          {
-            "id": 12,
-            "login": "usuario1",
-            "nome": "Usuario 1",
-            "participar": true
-          }
+            {
+              "contato": {
+                "id": 12,
+                "nome": "José"
+              }
+            },
+            {
+              "usuario": {
+                "id": 30,
+                "login": "usuario@nectar.com.br"
+              },
+              "participar": true
+            },
+            {
+              "email": "externo@nectar.com.br"
+            }
         ],
         "responsavel": {
           "id": 12,
