@@ -93,6 +93,8 @@ compromissos | (integer) | Quantidade de compromissos pendentes
 tarefas | (integer) | Quantidade de tarefas pendentes
 bloquearProposta | (boolean) | Status do bloqueio para geração de proposta da oportunidade
 bloquearConclusao | (boolean) | Status do bloqueio para conclusão da oportunidade
+corresponsaveis | (array)(object) | Usuários corresponsáveis da oportunidade
+equipesCorresponsaveis | (array)(object) | Equipes corresponsáveis da oportunidade
 
 \* readonly
 
@@ -151,7 +153,20 @@ Exemplo
             "Campo 1": "Valor 1",
             "Campo 2": "Valor 2"
         },
-        bloquearProposta: false,
-        bloquearConclusao: false
+        "bloquearProposta": false,
+        "bloquearConclusao": false,
+	"corresponsaveis": [
+    	    {
+     	        "id": 94,
+      	        "login": "usuario-coresp@teste.com.br",
+      	        "nome": "Usuario Corresponsavel"
+    	    }
+  	],
+        "equipesCorresponsaveis": [
+            {
+                "id": 9,
+                "nome": "Equipe X"
+            }
+        ]
     }
 ```
