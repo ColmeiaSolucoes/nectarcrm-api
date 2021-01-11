@@ -62,8 +62,8 @@ Schema Info | [Schema JSON](schema.json)
 
 Propriedade | Tipo | Descricao
 ------------ | ------------- | -------------
-autor | (object) | Autor da oportunidade
-autorAtualizacao | (object) | Quem fez a última atualização
+autor | (object) | Autor da oportunidade (Objeto com a propriedade id)
+autorAtualizacao | (object) | Quem fez a última atualização (Objeto com a propriedade id)
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 cliente | (object) | Contato relacionado a venda
 contato | (object) | Pessoa (contato) relacionado a venda
@@ -110,6 +110,9 @@ Exemplo
         "contato": {
           "id": 141961,
           "nome": "Pessoa do cliente 1"
+        },
+        "autor":{
+            id: 1
         },
         "justificativas": [
             { 
