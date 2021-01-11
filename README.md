@@ -6,13 +6,13 @@
   **Nota:** Qualquer erro ou sugestão, por favor nos contate.
 
 Esta API permite o controle total dos contatos, oportunidades, tarefas e compromissos. Veja as instruções de como realizar a integração abaixo.
-###[Clique aqui para a documentação completa](http://docs.nectarcrm.apiary.io)
+### [Clique aqui para a documentação completa](http://docs.nectarcrm.apiary.io)
 
 ## Instruções para realizar a integração
 
 ### URL de acesso
 https://app.nectarcrm.com.br/crm/api/1/
-######Obs: utilize o HTTPS, pois o HTTP ainda funciona vai ser desabilitado em breve
+###### Obs: utilize o HTTPS, pois o HTTP ainda funciona vai ser desabilitado em breve
 
 ### Requisição HTTP
 

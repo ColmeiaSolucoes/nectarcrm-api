@@ -11,6 +11,10 @@ http://app.nectarcrm.com.br/crm/api/1/publicacao/
 ### Endpoints disponíveis
     Listagem: GET /publicacao/
     Inserção: POST /publicacao/
+    Inserção com anexos: POST /publicacao/incluirComAnexos
+        Content-Type: multipart/form-data
+        Recebe dois parametros: publicacao (String json, como definido no esquema)
+                                anexos (lista de arquivos binarios)
     Visualização: GET /publicacao/{id}
     Incluir comentário: POST /publicacao/{publicacaoId}/comentario 
         BODY { "autor": { "nome": "Teste" }, "descricao": "Teste" }
