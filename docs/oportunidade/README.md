@@ -112,7 +112,9 @@ Exemplo
           "nome": "Pessoa do cliente 1"
         },
         "autor":{
-            id: 1
+          "id": 12,
+	  "login": "contato1@teste.com.br",  //se nao tiver id, procura por esse
+          "nome": "Usuario 1"  //se nao tiver id, procura por esse
         },
         "justificativas": [
             { 
