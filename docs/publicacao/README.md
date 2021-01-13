@@ -15,6 +15,7 @@ http://app.nectarcrm.com.br/crm/api/1/publicacao/
         Content-Type: multipart/form-data
         Recebe dois parametros: publicacao (String json, como definido no esquema)
                                 anexos (lista de arquivos binarios)
+    Ex: curl -H "Content-Type: multipart/form-data" -F publicacao='{"oportunidade":{"id":2},"assunto":"Exemplo publicacao com anexos","descricao":"Esse é um exemplo de publicacao com anexos"}' -F anexos=@./example.txt  http://app.nectarcrm.com.br/crm/api/1/publicacao/incluirComAnexos
     Visualização: GET /publicacao/{id}
     Incluir comentário: POST /publicacao/{publicacaoId}/comentario 
         BODY { "autor": { "nome": "Teste" }, "descricao": "Teste" }
