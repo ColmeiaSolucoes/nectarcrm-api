@@ -36,7 +36,8 @@ subcategoria | (object) | SubCategoria do produto
 valorBase | (float) | Valor base do produto
 valorEditavel | (boolean) | Indica se o valor base do produto é ou não editável
 fracionario | (boolean) | Indica se o produto permite quantidade fracionada
-
+itensDeCusto | (ItemDeCusto) | Adiciona as formações de preço do produto, e define sua precificacao do tipo composto
+faixasPreco | (FaixaPreco) | Cria a faixa de preço do produto, e define sua precificacao do tipo faixa de preço
 Exemplo
 ```js
     [
@@ -84,7 +85,30 @@ Exemplo
                 "isDescontoPorcentual": true
             }
         ],
-        "editarProdutosDependentes": false
+        "editarProdutosDependentes": false,
+         "itensDeCusto": [//quando precificação do tipo composta
+            {
+                "id": 1,//id da formacao de preço para pesquisa na base
+                "nome": "Formação 1",//nome da formação de preço para pesquisa na base
+                "valor": 300.00,
+                "quantidade": 2.0,
+                "valorBase":300.00,//necessario apenas quando a formacao de preço nao for encontrada na base, será criada.
+                "porcentagem":false,//necessario apenas quando a formacao de preço nao for encontrada na base, será criada.
+                "multiplicador":false//necessario apenas quando a formacao de preço nao for encontrada na base, será criada.
+            }
+        ],
+        "faixasPreco": [//quando precificação do tipo faixa de preço
+            {
+                "quantidadeInicial": 0,
+                "quantidadeFinal": 10,
+                "valor": 300.00
+            },
+             {
+                "quantidadeInicial": 11,
+                "quantidadeFinal": 20,
+                "valor": 270.00
+            }
+        ]
       }
   ]
 ```
