@@ -42,6 +42,7 @@ importante | (boolean) | Mostra se é uma publicação marcada como importante
 oportunidade | (object[[oportunidade](../oportunidade)]) | Vincula essa publicação a oportunidade
 qtdeComentarios | (int) | Mostra a quantidade de comentários feitos nessa publicação
 tarefa | (object[[tarefa](../tarefa)]) | Vincula essa publicação a tarefa
+anexos | (array[anexoPublicacao]) | Anexos vinculados à Publicação
 
 Exemplo
 ```js
@@ -73,7 +74,11 @@ Exemplo
                 "nome": "Empresa teste"
             },
             "assunto": "Editou uma oportunidade",
-            "descricao": "Teste de edição<br>Data de fechamento: 19/04/2016 <i class='icon-long-arrow-right'></i> <a>13/05/2016</a>"
+            "descricao": "Teste de edição<br>Data de fechamento: 19/04/2016 <i class='icon-long-arrow-right'></i> <a>13/05/2016</a>",
+            "anexos": {
+                "id":31,
+                "nome": "fotoProfile.jpg"
+            }
         }
     ]
 ```
