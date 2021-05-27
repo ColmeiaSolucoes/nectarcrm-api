@@ -17,9 +17,6 @@ http://app.nectarcrm.com.br/crm/api/1/qualificacoes/
     Visualização: GET /qualificacoes/{id}
     Atualização: PUT /qualificacoes/{id}
     Exclusão: DELETE /qualificacoes/
-    Procura por e-mail: GET /qualificacoes/email/{email@dominio.*} (use * para busca por like)
-    Procura por telefone: GET /qualificacoes/telefone/{6299999999*} (use * para busca por like)
-    Procura por ID contato: GET /qualificacoes/contatoId/{contatoId}
     
 Parâmetros de listagem:
 * Páginação: 
