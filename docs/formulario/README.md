@@ -61,7 +61,7 @@ Exemplo
                 "First question": "true",
                 "Second question": "value text"
             },
-            "resposasObject": [ {
+            "respostasObject": [ {
                 "campoPersonalizado" : {
                   "id" : 31021,
                   "nome" : "Pergunta 1",
