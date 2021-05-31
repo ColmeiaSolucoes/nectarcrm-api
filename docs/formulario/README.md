@@ -34,54 +34,52 @@ respostasObject | (object[valorCampoPersonalizado) | Campos de respostas com pro
 
 Exemplo
 ```js
-    [
-        {
+    {
+        "id": 1,
+        "dataCriacao": "2018-04-05T15:44:09-03:00",
+        "dataAtualizacao": "2018-08-13T15:01:49-03:00",
+        "dataPreenchimento": "2018-08-13T15:01:49-03:00",
+        "preenchido": true,
+        "autor": {
             "id": 1,
-            "dataCriacao": "2018-04-05T15:44:09-03:00",
-            "dataAtualizacao": "2018-08-13T15:01:49-03:00",
-            "dataPreenchimento": "2018-08-13T15:01:49-03:00",
-            "preenchido": true,
-            "autor": {
-                "id": 1,
-                "login": "user1@domain.com",
-                "nome": "User 1",
-                "foto": "1-photo.png"
+            "login": "user1@domain.com",
+            "nome": "User 1",
+            "foto": "1-photo.png"
+        },
+        "autorAtualizacao": {
+            "id": 19,
+            "login": "user1@domain.com",
+            "nome": "User 1",
+            "foto": "1-photo.png"
+        },
+        "modeloFormulario": {
+            "id": 1,
+            "nome": "First form"
+        },
+        "respostas": {
+            "First question": "true",
+            "Second question": "value text"
+        },
+        "respostasObject": [ {
+            "campoPersonalizado" : {
+              "id" : 31021,
+              "nome" : "Pergunta 1",
+              "tipo" : 0,
+              "obrigatorio" : false,
+              "opcoes" : [ ],
+              "opcoesPersonalizadas" : [ ],
+              "sequencia" : 1,
+              "secao" : {
+                "ativo" : true,
+                "nome" : "First Form",
+                "id" : 2
+              },
+              "mostrarFiltro" : true,
+              "escondido" : true
             },
-            "autorAtualizacao": {
-                "id": 19,
-                "login": "user1@domain.com",
-                "nome": "User 1",
-                "foto": "1-photo.png"
-            },
-            "modeloFormulario": {
-                "id": 1,
-                "nome": "First form"
-            },
-            "respostas": {
-                "First question": "true",
-                "Second question": "value text"
-            },
-            "respostasObject": [ {
-                "campoPersonalizado" : {
-                  "id" : 31021,
-                  "nome" : "Pergunta 1",
-                  "tipo" : 0,
-                  "obrigatorio" : false,
-                  "opcoes" : [ ],
-                  "opcoesPersonalizadas" : [ ],
-                  "sequencia" : 1,
-                  "secao" : {
-                    "ativo" : true,
-                    "nome" : "First Form",
-                    "id" : 2
-                  },
-                  "mostrarFiltro" : true,
-                  "escondido" : true
-                },
-                "obrigatorioFormulario": true,
-                "valor" : "787",
-                "id" : 698681
-            } ]
-        }
-    ]
+            "obrigatorioFormulario": true,
+            "valor" : "787",
+            "id" : 698681
+        } ]
+    }
 ```
