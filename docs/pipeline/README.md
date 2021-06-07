@@ -33,6 +33,10 @@ modeloVenda | (int) | Modelo de venda do funil (0 = B2B, 1 = B2C)
 multiplasTabelasPreco | (boolean) | Determina se poderá usar múltiplas tabelas de preço
 corresponsabilidade | (boolean) | Determina se poderá usar corresponsabilidade nas oportunidades
 ignorarRestricaoEquipes | (boolean) | Caso corresponsabilidade esteja ativo, determina se irá ignorar restrição de equipes
+consideracoesObrigatorioGanhar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao ganhar
+consideracoesObrigatorioPerder | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao perder
+consideracoesObrigatorioProrrogar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao prorrogar
+consideracoesObrigatorioDescartar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao descartar
 
 Exemplo
 ```js
@@ -69,6 +73,10 @@ Exemplo
         "multiplasTabelasPreco": false,
         "corresponsabilidade": true,
         "ignorarRestricaoEquipes": true,
+        "consideracoesObrigatorioGanhar": true,
+        "consideracoesObrigatorioPerder": false,
+        "consideracoesObrigatorioProrrogar": true,
+        "consideracoesObrigatorioDescartar": true
       }
     ]
 ```
