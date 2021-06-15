@@ -142,7 +142,43 @@
 		},
 		"twitter": {
 			"type": "string"
-		}
+		},
+		"regiaoPais": {
+			"type": "object",
+			"properties": {
+				"id": {
+				    "type": "integer"
+				},
+				"nome": {
+				    "type": "string"
+				},
+			},			
+		},
+		"regiaoEstado": {
+			"type": "object",
+			"properties": {
+				"id": {
+				    "type": "integer"
+				},
+				"nome": {
+				    "type": "string"
+				},
+				"sigla": {
+				    "type": "string"
+				},
+			},			
+		},
+		"regiaoMunicipio": {
+			"type": "object",
+			"properties": {
+				"id": {
+				    "type": "integer"
+				},
+				"nome": {
+				    "type": "string"
+				}
+			},			
+		},
 	},
 	"required": [
 		"ativo",
