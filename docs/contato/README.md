@@ -88,6 +88,9 @@ twitter | (string) | Twitter do contato
 compromissos | (integer) | Quantidade de compromissos pendentes
 oportunidades | (integer) | Quantidade de oportunidades pendentes
 tarefas | (integer) | Quantidade de tarefas pendentes
+regiaoPais | (object)["Pais"] | País do contato
+regiaoEstado | (object)["Estado"] | Estado do contato
+regiaoMunicipio | (object)["Municipio"] | Cidade do contato
 
 
 Exemplo
@@ -165,6 +168,19 @@ Exemplo
           "99999999999",
           "11999999999"
         ],
-        "twitter": "twitter1"
+        "twitter": "twitter1",
+	"regiaoPais": {
+          "id": 1,
+          "nome": "Brasil"
+        },
+	"regiaoEstado": {
+          "id": 2,
+          "nome": "São Paulo",
+	  "sigla": "SP"
+        },
+	"regiaoMunicipio": {
+          "id": 3,
+          "nome": "Sorocaba"
+        }
     }
 ```
