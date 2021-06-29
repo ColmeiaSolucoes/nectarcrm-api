@@ -27,6 +27,10 @@ Endpoints disponíveis com seus agrupadores:
 - /qualification -- Criação, limite, conclusão, atualização e prorrogação;
 - /qualification-with-products -- Criação, limite, conclusão, atualização e prorrogação;
 - /load-report/{reportId} -- Criação, limite, conclusão, atualização e prorrogação (disponibilidade de acordo com a tabela utilizada no relatório);
+- /goals -- Criação,atualização e início;
+- /company-goals -- Criação,atualização e início;
+- /company-goals-per-user -- Criação,atualização e início;
+- /company-goals-per-product-category -- Criação,atualização e início;
 
 
 Agrupadores disponíveis:
@@ -36,6 +40,7 @@ Agrupadores disponíveis:
 * Data de conclusão = 2;
 * Data de atualização = 3;
 * Data de prorrogação = 4;
+* Data de início = 5;
 
 Exemplo de requisição: `https://app.nectarcrm.com.br/crm/api/1/big-data/opportunity?aggregator=0&initialDate=2020-01-01&endDate=2020-02-01`
 
