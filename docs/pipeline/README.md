@@ -37,6 +37,7 @@ consideracoesObrigatorioGanhar | (boolean) | Parâmetro para indicar se a consid
 consideracoesObrigatorioPerder | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao perder
 consideracoesObrigatorioProrrogar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao prorrogar
 consideracoesObrigatorioDescartar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao descartar
+moeda | (string) | Moeda configurada para a Pipeline
 
 Exemplo
 ```js
@@ -76,7 +77,8 @@ Exemplo
         "consideracoesObrigatorioGanhar": true,
         "consideracoesObrigatorioPerder": false,
         "consideracoesObrigatorioProrrogar": true,
-        "consideracoesObrigatorioDescartar": true
+        "consideracoesObrigatorioDescartar": true,
+        "moeda": "BRL"
       }
     ]
 ```
