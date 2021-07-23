@@ -31,6 +31,7 @@ responsavel | (object) | Quem será responsável por esse contato
 status | (integer) | Status da tarefa (0 = Aberta, 1 = Concluída, 2 = Cancelada, 3 = Em execução)
 tipo | (integer) | Tipo da tarefa (0 = comum, 1 = ligação, 2 = notificação, 3 = e-mail, 4 = compromisso)
 titulo | (string) | Titulo da tarefa
+modeloTarefa | (object) | Quando a tarefa for criada pelo workflow, irá retornar as propriedades do modelo
 
 Quando a tarefa é do tipo ligação:
 
@@ -67,6 +68,17 @@ Exemplo
         },
         "status": 0, //aberta
         "tipo": 0, //comum
-        "titulo": "Teste de tarefa"
+        "titulo": "Teste de tarefa",
+	"modeloTarefa": {
+    	   "id": 41,
+    	   "titulo": "Teste block",
+    	   "tarefaTipo": {
+      		"id": 1,
+      		"nome": "Tarefa",
+      		"ativo": true,
+      		"natureza": 0
+    	    },
+    	    "blockFieldsEdit": true
+	}
       }
 ```
