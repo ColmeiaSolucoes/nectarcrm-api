@@ -13,6 +13,7 @@ Parâmetros de listagem:
 * &aggregator=x (integer) Agrupador para seleção do período de datas (criação, atualização, limite, conclusão e prorrogadas). Conferir abaixo quais estão disponíveis para cada tabela;
 * &initialDate=x (string) Data de início desejado para a query. Precisa estar no formato `YYYY-MM-DD`;
 * &endDate=x (string) Data fim desejada para a query. Precisa estar no formato `YYYY-MM-DD`;
+* &ignoreSections=x (string) Seções de campos para serem excluídos da requisição. Mais detalhes abaixo;
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
@@ -41,6 +42,21 @@ Agrupadores disponíveis:
 * Data de atualização = 3;
 * Data de prorrogação = 4;
 * Data de início = 5;
+
+Ignorar seções:
+
+Para excluir da requisição os campos indesejados, você pode indicar quais seções serão ignoradas. Exemplo ignorando duas seções: `...big-data/opportunity?ignoreSections=personalized&ignoreSections=tags&initialDate...`
+
+Seções disponíveis para remoção por tabela:
+- /opportunity -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /opportunity-with-products -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /contact -- personalized, tags
+- /task -- personalized
+- /appointment -- personalized
+- /qualification -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /qualification-with-products -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+
+-----
 
 Exemplo de requisição: `https://app.nectarcrm.com.br/crm/api/1/big-data/opportunity?aggregator=0&initialDate=2020-01-01&endDate=2020-02-01`
 
