@@ -97,6 +97,7 @@ bloquearProposta | (boolean) | Status do bloqueio para geração de proposta da 
 bloquearConclusao | (boolean) | Status do bloqueio para conclusão da oportunidade
 corresponsaveis | (array)(object) | Usuários corresponsáveis da oportunidade
 equipesCorresponsaveis | (array)(object) | Equipes corresponsáveis da oportunidade
+motivoDescarte | (object) | Motivo de descarte da oportunidade
 
 \* readonly
 
@@ -174,6 +175,10 @@ Exemplo
                 "id": 9,
                 "nome": "Equipe X"
             }
-        ]
+        ],
+	"motivoDescarte": {
+	     "id": 15,
+             "nome": "Lead não qualificado"
+	}
     }
 ```
