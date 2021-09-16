@@ -36,8 +36,9 @@ subcategoria | (object) | SubCategoria do produto
 valorBase | (float) | Valor base do produto
 valorEditavel | (boolean) | Indica se o valor base do produto é ou não editável
 fracionario | (boolean) | Indica se o produto permite quantidade fracionada
-itensDeCusto | (ItemDeCusto) | Adiciona as formações de preço do produto, e define sua precificacao do tipo composto
+itensDeCusto | (array)(ItemDeCusto) | Adiciona as formações de preço do produto, e define sua precificacao do tipo composto
 faixasPreco | (FaixaPreco) | Cria a faixa de preço do produto, e define sua precificacao do tipo faixa de preço
+
 Exemplo
 ```js
     [
