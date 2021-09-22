@@ -38,6 +38,7 @@ valorEditavel | (boolean) | Indica se o valor base do produto é ou não editáv
 fracionario | (boolean) | Indica se o produto permite quantidade fracionada
 itensDeCusto | (array)(ItemDeCusto) | Adiciona as formações de preço do produto, e define sua precificacao do tipo composto
 faixasPreco | (FaixaPreco) | Cria a faixa de preço do produto, e define sua precificacao do tipo faixa de preço
+valorBaseComposto | (float) | Determina o valor base de um produto com precificação do tipo composto
 
 Exemplo
 ```js
@@ -98,6 +99,7 @@ Exemplo
                 "multiplicador":false//necessario apenas quando a formacao de preço nao for encontrada na base, será criada.
             }
         ],
+        "valorBaseComposto": 200.59,
         "faixasPreco": [//quando precificação do tipo faixa de preço
             {
                 "quantidadeInicial": 0,
