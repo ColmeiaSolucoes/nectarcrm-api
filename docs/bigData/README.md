@@ -32,6 +32,7 @@ Endpoints disponíveis com seus agrupadores:
 - /company-goals -- Criação,atualização e início;
 - /company-goals-per-user -- Criação,atualização e início;
 - /company-goals-per-product-category -- Criação,atualização e início;
+- /opportunity-history -- Criação;
 
 
 Agrupadores disponíveis:
