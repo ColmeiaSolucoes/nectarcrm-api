@@ -98,6 +98,7 @@ bloquearConclusao | (boolean) | Status do bloqueio para conclusão da oportunida
 corresponsaveis | (array)(object) | Usuários corresponsáveis da oportunidade
 equipesCorresponsaveis | (array)(object) | Equipes corresponsáveis da oportunidade
 motivoDescarte | (object) | Motivo de descarte da oportunidade
+vendaBase | (boolean) | Campo indicando se a venda foi realizada na base
 
 \* readonly
 
@@ -180,6 +181,7 @@ Exemplo
 	"motivoDescarte": {
 	     "id": 15,
              "nome": "Lead não qualificado"
-	}
+	},
+	"vendaBase": true 
     }
 ```
