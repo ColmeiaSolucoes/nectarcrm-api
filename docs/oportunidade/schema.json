@@ -216,6 +216,10 @@
 		"bloquearConclusao": {
 			"type": "boolean",
 			"description": "Status do bloqueio de conclusão de oportunidade"
+		},
+		"vendaBase": {
+			"type": "boolean",
+			"description": "Campo indicando se a venda foi realizada na base"
 		}
 	},
 	"required": [
