@@ -4,6 +4,11 @@
   Colocaremos materiais e webhooks para que a integração seja facilitada.
 
   **Nota:** Qualquer erro ou sugestão, por favor nos contate.
+  
+Se você tem um software e deseja desenvolver uma integração nativa com a gente, preencha o formulário abaixo.
+
+### [Clique aqui para acessar o formulário](https://docs.google.com/forms/d/1_aC8gHnGuGS-QpvGoPQC3xwDCa53wwHapWdBP8qy0YU/edit)
+
 
 Esta API permite o controle total dos contatos, oportunidades, tarefas e compromissos. Veja as instruções de como realizar a integração abaixo.
 
