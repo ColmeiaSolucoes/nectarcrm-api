@@ -44,11 +44,11 @@ Agrupadores disponíveis:
 * Data de prorrogação = 4;
 * Data de início = 5;
 
-Ignorar seções:
+Incluir seções:
 
-Para excluir da requisição os campos indesejados, você pode indicar quais seções serão ignoradas. Exemplo ignorando duas seções: `...big-data/opportunity?ignoreSections=personalized&ignoreSections=tags&initialDate...`
+Para incluir na requisição os campos desejados, você pode indicar quais seções serão incluídas. Por padrão, enviamos somente os campos padrões de cada seção. Exemplo adicionado duas seções: `...big-data/opportunity?includeSections=personalized&includeSections=tags&initialDate...`
 
-Seções disponíveis para remoção por tabela:
+Seções disponíveis para inclusão por tabela:
 - /opportunity -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
 - /opportunity-with-products -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
 - /contact -- personalized, tags
