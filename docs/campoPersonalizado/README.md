@@ -27,7 +27,7 @@ opcoes | (array)(string) | Opções em lista dos campos quando utilizando campo 
 secao | (string) | Seção agrupadora do campo que ele está vinculado  
 sequencia | (int) | Ordem do campo na seção que ele está  
 relacionado | (string) | A qual página do nectar ele está vinculado (Contato, Oportunidade, Tarefa, Compromisso)
-tipo | (int) | Tipo do campo: 0 = Número, 1 = Texto, 2 = Data, 3 = Moeda, 4 = Booleano, 5 = Lista de opções, 6 = Texto, 7 = Radio, 8 = URL, 9 = Contato, 10 = CNAE, 11 = Checkbox  
+tipo | (int) | Tipo do campo: 0 = Número, 1 = Texto, 2 = Data, 3 = Moeda, 4 = Booleano, 5 = Lista de opções, 6 = Texto, 7 = Radio, 8 = URL, 9 = Contato, 10 = CNAE, 11 = Checkbox, 12 = Fracionário  
 
 Exemplo
 ```js
