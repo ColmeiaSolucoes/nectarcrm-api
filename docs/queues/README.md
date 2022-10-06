@@ -87,3 +87,45 @@ Exemplo de retorno
   "strategy": 0
 }
 ```
+
+--------
+
+As filas podem ser utilizadas nas criações de Contato, Oportunidades e Leadboard. O próximo usuário da fila será utilizado como responsável do objeto. Exemplos:
+
+Contato:
+```
+{
+  "nome": "Rafael teste fila 7",
+  "queue": {
+    "id": 12
+  }
+}
+```
+
+Oportunidade:
+```
+{
+  "nome": "Oportunidade Do José",
+  "cliente": {
+    "id": 298
+  },
+  "funilDeVenda": {
+    "id": 20
+  },
+  "queue": {
+    "id": 12
+  }
+}
+```
+
+Leadboard:
+```
+{
+  "cliente": {
+    "nome": "Cliente para qualificar"
+  },
+  "queue": {
+    "id": 12
+  }
+}
+```
