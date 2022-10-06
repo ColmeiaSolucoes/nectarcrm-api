@@ -93,7 +93,7 @@ Exemplo de retorno
 As filas podem ser utilizadas nas criações de Contato, Oportunidades e Leadboard. O próximo usuário da fila será utilizado como responsável do objeto. Exemplos:
 
 Contato:
-```
+```json
 {
   "nome": "Rafael teste fila 7",
   "queue": {
@@ -103,7 +103,7 @@ Contato:
 ```
 
 Oportunidade:
-```
+```json
 {
   "nome": "Oportunidade Do José",
   "cliente": {
@@ -119,7 +119,7 @@ Oportunidade:
 ```
 
 Leadboard:
-```
+```json
 {
   "cliente": {
     "nome": "Cliente para qualificar"
