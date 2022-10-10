@@ -57,6 +57,7 @@ autorAtualizacao | (object) | Quem fez a última atualização
 camposPersonalizados | (properties){"campo 1": "valor 1", "campo 2": "valor 2"} | Campos criados para uso no NectarCRM
 categoria | (string) | Categoria do contato (se não tiver, será criado)
 cnpj | (string) | CNPJ do contato
+codigo | (string) | Código do contato
 cpf | (string) | CPF do contato
 constante | (integer) | Tipo do contato (0 = Clientes, 1 = Prospects, 2 = Suspects, 3 = Leads, 5 = Descartados)
 contatos | (array)(contato) | Contatos relacionados (pessoas)
@@ -108,6 +109,7 @@ Exemplo
         },
         "categoria": "Cliente ativo",
         "cnpj": "99.999.999/9999-99",
+	"codigo": "ABC-001",
         "constante": 2,
         "contatos": [
           {
