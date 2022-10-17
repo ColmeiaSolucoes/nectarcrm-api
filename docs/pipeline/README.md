@@ -38,6 +38,7 @@ consideracoesObrigatorioPerder | (boolean) | Parâmetro para indicar se a consid
 consideracoesObrigatorioProrrogar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao prorrogar
 consideracoesObrigatorioDescartar | (boolean) | Parâmetro para indicar se a consideração deve ser obrigatória ao descartar
 moeda | (string) | Moeda configurada para a Pipeline
+permiteTarefasAvulsas | (boolean) | Parâmetro para indicar se o funil permite criação de tarefas fora do workfow
 
 Exemplo
 ```js
@@ -78,7 +79,8 @@ Exemplo
         "consideracoesObrigatorioPerder": false,
         "consideracoesObrigatorioProrrogar": true,
         "consideracoesObrigatorioDescartar": true,
-        "moeda": "BRL"
+        "moeda": "BRL",
+        "permiteTarefasAvulsas": true
       }
     ]
 ```
