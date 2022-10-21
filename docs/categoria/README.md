@@ -9,6 +9,7 @@ http://app.nectarcrm.com.br/crm/api/1/categoria/
 
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
+* &nome=x (string) Nome da categoria
 
 [Para mais informações, consulte a documentação completa clicando aqui](http://docs.nectarcrm.apiary.io)
 
