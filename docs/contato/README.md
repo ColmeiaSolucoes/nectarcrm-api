@@ -13,6 +13,7 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Inserção: POST /contatos/
     Visualização: GET /contatos/{id}
     Atualização: PUT /contatos/{id}
+    * Inserção/Atualização (upsert): POST /contacts/upsert
     Exclusão: DELETE /contatos/
     Procura por e-mail: GET /contatos/email/{email@dominio.*} (use * para busca por like)
     Procura por telefone: GET /contatos/telefone/{6299999999*} (use * para busca por like)
@@ -21,7 +22,17 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Estatísticas por contato: GET /contatos/statistics/{contatoId}
     Próxima atividade: /contatos/{contatoId}/proximaAtividade
     
-Parâmetros de listagem:
+#### Parametros de Upsert (inserção / atualização):
+* **mail** - irá buscar por e-mail (email tem prioridade acima do telefone);
+* **phone** - irá buscar por telefone (caso nao venha o parametro de email, vamos usar de telefone);
+* **ignoreRequiredFields**- mesmo parametro de ignorarCamposObrigatorios de atualizacao/insercao;
+* **ignoreValidations** - mesmo parametro de ignorarValidacoes de atualizacao/insercao;
+* **exactMatch** - aceito true/false, serve para indicar se iremos buscar o email/telefone exato ou nao (por padrao sempre true)
+* **Com propriedade de email**: vamos buscar com iniciados com o texto. Ex: Caso seja true -- rafael@gm... || Caso seja false(ou nao seja passado): rafael@gm
+* **Com propriedade de telefone**: vamos buscar contendo o texto caso seja true. Ex: True -- ...551299186... || False -- 551299186
+
+
+#### Parâmetros de listagem:
 + &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 + &displayLength (optional, int) - Quantidade de objetos a serem listados (máximo 50)
 + &nome (optional, string) - Nome ou código do contato
