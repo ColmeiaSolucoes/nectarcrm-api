@@ -135,6 +135,8 @@ Exemplo
                 "isComissaoPorcentual": false,
                 "desconto": 0,
                 "isDescontoPorcentual": false,
+		"acrescimo": 10,
+		"acrescimoPercentual": false,
                 "refId": 8435, //ID do produto cadastrado
                 "nome": "Produto 1", //aqui serve o nome ou o código editado na tabela do produto
                 "quantidade": 6, //quantidade de produtos
