@@ -24,11 +24,11 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Upsert: POST /contatos/upsert
     
 #### Parametros de Upsert (inserção / atualização):
-* **mail** - irá buscar por e-mail (email tem prioridade acima do telefone);
-* **phone** - irá buscar por telefone (caso nao venha o parametro de email, vamos usar de telefone);
-* **ignoreRequiredFields**- mesmo parametro de ignorarCamposObrigatorios de atualizacao/insercao;
-* **ignoreValidations** - mesmo parametro de ignorarValidacoes de atualizacao/insercao;
-* **exactMatch** - aceito true/false, serve para indicar se iremos buscar o email/telefone exato ou nao (por padrao sempre true)
+* **mail** - irá buscar por e-mail (e-mail tem prioridade acima do telefone);
+* **phone** - irá buscar por telefone (caso não venha o parâmetro de e-mail, vamos usar de telefone);
+* **ignoreRequiredFields**- ignorar campos obrigatórios (padrão false);
+* **ignoreValidations** - ignorar validações (padrão false);
+* **exactMatch** - aceito true/false, serve para indicar se iremos buscar o email/telefone exato ou não (padrão: true)
 * **Com propriedade de email**: vamos buscar com iniciados com o texto. Ex: Caso seja true -- rafael@gm... || Caso seja false(ou nao seja passado): rafael@gm
 * **Com propriedade de telefone**: vamos buscar contendo o texto caso seja true. Ex: True -- ...551299186... || False -- 551299186
 
