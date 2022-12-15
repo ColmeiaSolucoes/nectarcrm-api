@@ -20,7 +20,8 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Procura por CNPJ: GET /contatos/cnpj/{cnpj}
     Procura por CPF: GET /contatos/cpf/{cpf}
     Estatísticas por contato: GET /contatos/statistics/{contatoId}
-    Próxima atividade: /contatos/{contatoId}/proximaAtividade
+    Próxima atividade: GET /contatos/{contatoId}/proximaAtividade
+    Upsert: POST /contatos/upsert
     
 #### Parametros de Upsert (inserção / atualização):
 * **mail** - irá buscar por e-mail (email tem prioridade acima do telefone);
