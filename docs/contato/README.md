@@ -23,7 +23,7 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     Próxima atividade: GET /contatos/{contatoId}/proximaAtividade
     Upsert: POST /contatos/upsert
     
-#### Parametros de Upsert (inserção / atualização):
+#### Parâmetros de Upsert -- QueryParam (inserção / atualização):
 * **mail** - irá buscar por e-mail (e-mail tem prioridade acima do telefone);
 * **phone** - irá buscar por telefone (caso não venha o parâmetro de e-mail, vamos usar de telefone);
 * **ignoreRequiredFields**- ignorar campos obrigatórios (padrão false);
