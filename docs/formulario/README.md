@@ -1,4 +1,4 @@
-# Publicação/Feedback Resource
+# Formulário Resource
 
 Esta API permite controlar formulários. 
 Veja as instruções de como realizar a integração abaixo.
@@ -10,9 +10,7 @@ http://app.nectarcrm.com.br/crm/api/1/formulario/
 
 ### Endpoints disponíveis
     Listagem: GET /formulario/
-    Inserção: POST /formulario/
     Visualização: GET /formulario/{formularioId}
-    Excluir comentário: DELETE /formulario/{formularioId} 
 
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
