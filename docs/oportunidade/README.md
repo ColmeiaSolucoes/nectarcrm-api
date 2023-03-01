@@ -34,6 +34,8 @@ Parâmetros de listagem:
 + &dataFimAtualizacao (optional, date) - Data atualização final (dd/MM/yyyy)
 + &dataInicioLimite (optional, date) - Data limite inicial (dd/MM/yyyy)
 + &dataFimLimite (optional, date) - Data limite final (dd/MM/yyyy)
++ &dataInicioConclusao (optional, date) - Data conclusão inicial (dd/MM/yyyy)
++ &dataFimConclusao (optional, date) - Data conclusão final (dd/MM/yyyy)
 + &nome (optional, string) - Nome ou código da oportunidade
 + &secao (optional, int) - Seção do contato (0 = clientes, 1 = prospects, 2 = suspects, 3 = leads, 5 = descartados)
 + &clienteId (optional, int) - id de um [/contato](../contato) contato
