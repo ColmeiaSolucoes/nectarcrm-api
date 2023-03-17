@@ -25,12 +25,16 @@ http://app.nectarcrm.com.br/crm/api/1/contatos/
     
 #### Parâmetros de Upsert -- QueryParam (inserção / atualização):
 * **mail** - irá buscar por e-mail (e-mail tem prioridade acima do telefone);
-* **phone** - irá buscar por telefone (caso não venha o parâmetro de e-mail, vamos usar de telefone);
+* **phone** - irá buscar por telefone (e-mail tem prioridade acima do telefone);
+* **cnpj** - irá buscar por cnpj (e-mail e telefone tem prioridade acima do cnpj);
+* **cpf** - irá buscar por cpf (e-mail, telefone e cnpj tem prioridade acima do cpf);
 * **ignoreRequiredFields**- ignorar campos obrigatórios (padrão false);
 * **ignoreValidations** - ignorar validações (padrão false);
 * **exactMatch** - aceito true/false, serve para indicar se iremos buscar o email/telefone exato ou não (padrão: true)
-* **Com propriedade de email**: vamos buscar com iniciados com o texto. Ex: Caso seja true -- rafael@gm... || Caso seja false(ou nao seja passado): rafael@gm
+* **Com propriedade de email**: vamos buscar com iniciados com o texto. Ex: Caso seja true -- ...rafael@gm... || Caso seja false(ou nao seja passado): rafael@gm
 * **Com propriedade de telefone**: vamos buscar contendo o texto caso seja true. Ex: True -- ...551299186... || False -- 551299186
+* **Com propriedade de cnpj**: vamos buscar com iniciados com o texto. Ex: Caso seja true -- ...2018049... || Caso seja false(ou nao seja passado): 2018049
+* **Com propriedade de cpf**: vamos buscar contendo o texto caso seja true. Ex: True -- ...399495... || False -- 399495
 
 
 #### Parâmetros de listagem:
