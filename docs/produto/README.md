@@ -7,6 +7,13 @@ Instruções para realizar a integração:
 URL
 http://app.nectarcrm.com.br/crm/api/1/produto/
 
+### Endpoints disponíveis
+    Inserir foto: POST /{id}/photo/set
+        Content-Type: multipart/form-data
+        Recebe um parâmetro: photo (arquivo de foto -- limitado em 5Mb -- extensões permitidas: jpg, png, jpeg, gif)
+    Ex: curl -i -X POST -H "Content-Type: multipart/form-data" -H "Access-Token: token" -F photo=@./example.jpg  http://app.nectarcrm.com.br/crm/api/1/produto/{id}/photo/set
+    Remover foto: POST /{id}/photo/remove
+
 Parâmetros de listagem:
 * &page=x (integer) Organiza a listagem de objetos por páginas (se colocar -1, lista o máximo de objetos: 200)
 
