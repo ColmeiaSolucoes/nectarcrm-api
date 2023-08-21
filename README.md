@@ -179,6 +179,9 @@ Com o tempo vamos documentando todos endpoints, mas ainda existem alguns que pod
 Para não ficar sem informação, criamos um endpoint que lista todos objetos e campos possíveis da API:
 - [https://app.nectarcrm.com.br/crm/api/1/app/columns/full](https://app.nectarcrm.com.br/crm/api/1/app/columns/full)
 
+### Limpar campos
+Para alguns endpoints (por hora, implementado em contatos), você pode limpar os campos passando como valor `null`, `""`, `{}`, `[]`. Caso não queira limpar o valor, numa edição, não passe o parâmetro. Ex: {"nome": "Rafael", "codigo": null} -> irá alterar o nome e limpar o código. {"nome": "Rafael"} -> irá alterar somente o nome e manter os demais campos.
+
 ### Header
 A requisição deve conter:
 
