@@ -2,11 +2,6 @@
 
 Esta API permite o controle das propostas das oportunidades. Veja as instruções de como realizar a integração abaixo.
 
-Instruções para realizar a integração:
-
-URL
-http://app.nectarcrm.com.br/crm/api/1/proposta/
-
 Parâmetros de listagem:
 * &status=x (integer) filtra os status da proposta
 * &page=x (integer) Organiza a listagem de objetos por páginas
