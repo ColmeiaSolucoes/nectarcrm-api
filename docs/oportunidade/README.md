@@ -21,6 +21,8 @@ http://app.nectarcrm.com.br/crm/api/1/oportunidades/
     Estatísticas por funil e etapa: GET /oportunidades/statistics/pipe/{pipelineId}
     Estatísticas total por funil: GET /oportunidades/statistics/total/{pipelineId}
     Próxima atividade: /oportunidades/{oportunidadeId}/proximaAtividade
+
+_Obs: Por padrão o endpoit de listagem (GET diretamente no http://app.nectarcrm.com.br/crm/api/1/oportunidades) retorna somente oportunidade em andamento (status = 1)._
     
 Parâmetros de listagem:
 * Páginação: 
