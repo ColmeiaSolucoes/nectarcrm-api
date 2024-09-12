@@ -51,13 +51,13 @@ Incluir seções:
 Para incluir na requisição os campos desejados, você pode indicar quais seções serão incluídas. Por padrão, enviamos somente os campos padrões de cada seção. Exemplo adicionado duas seções: `...big-data/opportunity?includeSections=personalized&includeSections=tags&initialDate...`
 
 Seções disponíveis para inclusão por tabela:
-- /opportunity -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
-- /opportunity-with-products -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /opportunity -- personalized, contact (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /opportunity-with-products -- personalized, contact (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
 - /contact -- personalized, tags
 - /task -- personalized
 - /appointment -- personalized
-- /qualification -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
-- /qualification-with-products -- personalized, contacts (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /qualification -- personalized, contact (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
+- /qualification-with-products -- personalized, contact (campos personalizados de contato), tags, product, reason (motivo de ganho/perda);
 
 -----
 
