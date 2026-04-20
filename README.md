@@ -164,6 +164,7 @@ Tabelas administrativas
 - [/produtoCategoria](./docs/produtoCategoria)
 - [/produtoSubCategoria](./docs/produtoSubCategoria)
 - [/tabelaPreco](./docs/tabelaPreco)
+- [/table](./docs/tabelaDinamica) (tabelas dinâmicas vinculadas a contato/oportunidade/qualificação)
 - [/lista](./docs/lista)
 - [/origem](./docs/origem)
 - [/segmento](./docs/segmento)
