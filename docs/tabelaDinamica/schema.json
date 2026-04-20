@@ -1,0 +1,74 @@
+/**
+ * Schema do Objeto Table (Tabela Dinâmica)
+ */
+{
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"tableTemplate": {
+			"type": "object",
+			"properties": {
+				"id": { "type": "integer" },
+				"nome": { "type": "string" },
+				"alias": { "type": "string" }
+			}
+		},
+		"contact": {
+			"type": "object",
+			"properties": {
+				"id": { "type": "integer" }
+			}
+		},
+		"opportunity": {
+			"type": "object",
+			"properties": {
+				"id": { "type": "integer" }
+			}
+		},
+		"leadboard": {
+			"type": "object",
+			"properties": {
+				"id": { "type": "integer" }
+			}
+		},
+		"rows": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": { "type": "integer" },
+					"position": { "type": "integer" },
+					"values": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"id": { "type": "integer" },
+								"column": {
+									"type": "object",
+									"properties": {
+										"id": { "type": "integer" },
+										"position": { "type": "integer" }
+									},
+									"required": ["position"]
+								},
+								"value": { "type": "string" }
+							},
+							"required": ["column", "value"]
+						}
+					}
+				}
+			}
+		}
+	},
+	"required": [
+		"tableTemplate"
+	],
+	"oneOf": [
+		{ "required": ["contact"] },
+		{ "required": ["opportunity"] },
+		{ "required": ["leadboard"] }
+	]
+}
